@@ -1,0 +1,261 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: development/blee-dev
+#+roam_tags: branch
+#+roam_key: panels/development/blee-dev
+[[roam:panels/development]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/development/blee-dev/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/development/blee-dev/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/development -- blee-dev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
+
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-dev/developmentRoadmap")][developmentRoadmap]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+* +
+** Scope of this panel tree is blee development and bleePanel development
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "General And Misc Tasks" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *General And Misc Tasks:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** https://zhou-en.github.io/2020/10/21/Encrypt-and-Decrypt-File-with-python-gnupg/
+** https://www.digitalocean.com/community/tutorials/how-to-verify-code-and-encrypt-data-with-python-gnupg-and-python-3
+** https://github.com/vsajip/python-gnupg
+** https://github.com/kensanata/ggg
+** https://emailselfdefense.fsf.org/en/
+** https://zhou-en.github.io/2020/10/21/Encrypt-and-Decrypt-File-with-python-gnupg/
+** https://www.digitalocean.com/community/tutorials/how-to-verify-code-and-encrypt-data-with-python-gnupg-and-python-3
+** https://github.com/vsajip/python-gnupg
+** https://github.com/kensanata/ggg
+** https://emailselfdefense.fsf.org/en/
+** https://datatracker.ietf.org/doc/html/rfc6819
+** https://kkatsuyuki.github.io/notmuch-conf/
+** https://fossies.org/linux/offlineimap/offlineimap.conf
+** https://developers.google.com/gmail/api/auth/scopes
+** https://google-auth.readthedocs.io/en/stable/_modules/google/oauth2/credentials.html
+** https://github.com/ggervasio/gnus-gmail-oauth/blob/master/gnus-gmail-oauth.el
+** https://github.com/wanderlust/flim/blob/flim-1_14-wl/sasl-xoauth2.el
+** https://developers.google.com/gmail/imap/xoauth2-protocol
+** https://ict4g.net/adolfo/notes/emacs/reading-imap-mail-with-emacs.org.html
+** https://jrvcomputing.wordpress.com/2016/11/21/oauth2-authentication-for-offline-email-clients/
+** https://github.com/tenllado/dotfiles/tree/master/config/msmtp
+** https://hobo.house/2017/07/17/using-offlineimap-with-the-gmail-imap-api/
+** https://github.com/cscorley/send.py
+** https://www.thepythoncode.com/article/use-gmail-api-in-python
+** https://github.com/c-rack/qmail
+** nnimap-authenticator
+Some IMAP servers allow anonymous logins. In that case, this should be set to anonymous. If this variable isn’t
+set, the normal login methods will be used. If you wish to specify a specific login method to be used, you can set
+this variable to either login (the traditional IMAP login method), plain, cram-md5 or xoauth2. (The latter method
+requires using the oauth2.el library.)
+** TODO blee3 warning (straight): Could not reset to commit "b83ae
+Warning (straight): Could not reset to commit "b83ae593473810354504f0f182bfba4537d3c284" in repository "org" Disable showing Disable logging
+Warning (straight): Could not reset to commit "9de6709cddc09740d23d24fb425fa3c174d0e956" in repository "vertico" Disable showing Disable logging
+** TODO Gnus Manual problem -- If this slows you down or takes up very much space, a non-block-structured file system.
+** Warning (straight): Could not reset to commit "b83ae593473810354504f0f182bfba4537d3c284" in repository "org" Disable showing Disable logging
+** TODO Problems With Emacs --- Too configurable, too Backwards Compatible, Too many platforms below
+*** Windows support, defaults not reasonable. Fragmented development.
+*** Emacs is raw technolgy. It needs to be augmented by a customization layer.
+** TODO In the context of Gnus and orgMsg introduce the concept of bodyPartCompositors
+** TODO Create a Comeega/polymode menu to do equivalent of f12-p f12-n f12-o
+** TODO Buy into git-crypt --- git-secret
+** TODO BISOS-Authorship (dev machines) Profiles Vs BISOS-Delivery (production machines) Profiles
+** TODO think of bpo-s as .deb packages for data, data+code and services
+** TODO Buy into Git Large File Storage/Support git-lfs --- install client use with gitlab and github
+** TODO To YASnippet file disposition line add vlc for video and audio and dired
+** TODO Use guesslang for auto input methods.
+** TODO Buy into https://github.com/laishulu/emacs-smart-input-source --- auto input methods
+** TODO Bring over bidi-mode. from doom.
+** TODO Important and Urgent  Replace org-cycle with outline-show-subtree+toggle
+SCHEDULED: <2022-01-11 Tue>
+Change org-cycle  in all likes of blee:bxPanel:foldingSection to bx:sec:cycle -- where the whol
+subtree is chown and hidden. And add outline-show-subtree to +- menu.
+** TODO Adopt f-string in emacs -- https://kitchingroup.cheme.cmu.edu/blog/2018/05/14/f-strings-in-emacs-lisp/
+** TODO emacs-27 build need a .desktop -- run dpkg -L emacs-gtk -- look at .desktop -- add to binsPrep
+** TODO Absorb All existing in one shot.
+** TODO Re-Do The Panels menu to point to new place.
+** TODO sudo cp /opt/emacs-27.0.91/etc/emacs.desktop /usr/share/applications/
+** TODO lsp-pyright-typechecking-mode  https://emacs-lsp.github.io/lsp-pyright/
+** TODO lsp-pyright-venv-path  https://emacs-lsp.github.io/lsp-pyright/
+** TODO Adopt chemacs2 as bleeboot
+** TODO Adopt vanila doom as a bleeboot option
+** TODO Blee top Menus -- My Blee Panels Acts Apps File etc
+** TODO On top menus convert Modes to Act (Activities) -- Add NAFM as a sub-menu.
+** TODO Adopt straight.el
+** TODO Adopt helm-recoll -- Adopt org-recoll -- Adopt recoll -- Search engine
+** TODO Is broken: (use-package org-recoll :load-path "/bisos/blee/extPkgs/org-recoll")
+** TODO Harvest https://tecosaur.github.io/emacs-config/config.html
+** TODO Buy into org-protocol
+** TODO blee:bxPanel:linkWithTreeElem is buggy -- :agenda t results in infinite loop -- outlevel is +1
+** TODO List extra files in current panel directory -- lsf sans expected files.
+** TODO Fully Dynamic bxoRepots.sh list is too inefficient. -- Add a refresh instead.
+   SCHEDULED: <2021-01-25 Mon>
+** TODO Try out exwm -- Multi-Window
+   SCHEDULED: <2021-01-25 Mon>
+** TODO lined-tree-navigator should go under blee:bxPanel:evolution
+   SCHEDULED: <2021-01-11 Mon>
+** TODO General Panels should be moved down -- revisit  blee:bxPanel:terseTreeNavigator
+   SCHEDULED: <2021-01-11 Mon>
+** TODO Ancestors should come down to the end -- blee:bxPanel:terseTreeNavigator
+   SCHEDULED: <2021-01-11 Mon>
+** DONE Add https://www.sanarate.ir/Default.aspx (Rials to DOllars converter) to info base site
+** TODO We need a base git for /bisos/panels/blee,bisos,bxde as a node to facilitate traversals.
+   SCHEDULED: <2020-08-18 Tue>
+   Perhaps best done with a git base plus symlinks into that git base for its own _node_ etc.
+** TODO Common bleeDblock functions --Add to  bodyContent (), bodyCodeContent (), 
+   SCHEDULED: <2020-10-18 Sun>
+   Revisit  bx:dblock:governor:process -- Should bodyContentPlus be obsoleted -- No. It can be useful
+   as in realmExtensions.
+** TODO Absorb new macros and common funcs from dblock-org-realms.el
+   SCHEDULED: <2020-12-26 Sat>
+** 
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Panel Facilities" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Panel Facilities:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** TODO Use /bisos/blee/nativePkgs/org-img-link/org-img-link as example to create [[bxPlanel-linkto:xx]] etc
+   SCHEDULED: <2020-08-18 Tue>
+** TODO Revisit foldingSections so that they are sectioning and folding is an option
+** TODO Revisit panel templates.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Panels Content" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Panels Content:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** create blee-svc repo -- qmail, apache, goes here.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Snippets" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Snippets:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Change folding to sectioning and have sectioning
+*** Main Dropdown with Have "Sections"  and "Sections / Folding" -- Both Be dblocks.
+** TODO Library Intros -- To Execute Line /Py/Bash ICM add libs intro
+   SCHEDULED: <2020-09-19 Sat>
+** TODO Add realm extensions to snippets.
+** 
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Browser Integration" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Browser Integration:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** https://github.com/fregante/GhostText  https://melpa.org/#/atomic-chrome --- emacsConf2022
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Boot" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Boot:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Model" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Model:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** TODO Define and distinguish between  link-to, chain-to and connect-to
+   SCHEDULED: <2020-08-18 Tue>
+*** link-to goes to a bxPanel
+*** chain-to goes to a bxPanel and chains agenda relations
+*** connect-to goes to any org-file.
+** TODO Create [[link-to:xx]] --  [[chain-to:xx]] -- [[connect-to:xx]]  [[decrypt:xx]]  [[encrypt:xx]] 
+** 
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "blee-env directory structure" :anchor "" :extraInfo "Todos List"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *blee-env directory structure:* |]]  Todos List  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** env/boot    -- To get booting started
+** env/adopt   -- Packages adoption -- Needs to have its own repeated framework
+** env/bleeLib  -- Native Blee Libraries
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "emacs-devel contributions" :anchor "emacs-devel" :extraInfo "Mailing List Interactions"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *emacs-devel contributions:* |]] <<emacs-devel>> Mailing List Interactions  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** WAITING Send out Emacs Tutorial email
+SCHEDULED: <2023-04-24 Mon>
+** TODO Send out Input Methods Update
+** TODO Send out Hanging bug with input methods line
+** TODO Send out qmail revival request
+** TODO About Tutorial --- needs input methods text in tutorial
+** TODO About stability --- Usage stability vs Developer proper evolution
+** TODO Multilingual Calendar
+** TODO Bidi Menu
+** B|
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:blee-dev
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

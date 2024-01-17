@@ -1,0 +1,1049 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: development/bisos-dev
+#+roam_tags: branch
+#+roam_key: panels/development/bisos-dev
+[[roam:panels/development]]
+####+END
+# kind of begin
+#+title: BISOS Dev
+#+roam_alias: "bisos-apps" "bisos/panels/bisos-apps"
+#+roam_key: bleePanel/bisos/bisos-apps
+[[file:../../_nodeBase_/fullUsagePanel-en.org][BISOS Blee Top Panel]]
+
+## kind of end
+
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/development/bisos-dev/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/development/bisos-dev/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/development -- bisos-dev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bootstrapDev/_nodeBase_")][ =bootstrapDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** ----
+** به سویِ یک محیط زیست رقمی کامل و جامع
+** در چهار چوبِ حلال وجودیت چند وجودیها و با هم زندگانی
+** بر پایه:
+** The Libre-Halaal ByStar Digital Ecosystem
+** و:
+** BISOS: ByStar Internet Services Operating System
+** و:
+** Blee: Bystar Libre-Halaal Emacs usage Environment
+** ----
+** ----
+** Towards A Complete, Individualized Edge Oriented Digital Ecosystem
+** In The Libre-Halaal And Convivial Quadrant
+** Based On:
+** The Libre-Halaal ByStar Digital Ecosystem
+** A Unified and Non-Proprietary Model For Autonomous Internet Services
+** And Inter-Autonomous Social Relations
+** And:
+** BISOS: ByStar Internet Services Operating System
+** And:
+** Blee: Bystar Libre-Halaal Emacs Usage Environment
+** ----
+
+** constraints liberate liberties constrain -- https://www.youtube.com/watch?v=GqmsQeSzMdw
+** Constraints Liberate, Liberties Implode
+**
+** Development Agenda and plans.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+#+caption: Development Table
+| [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                 |
+|---------+------------+------------+----------+---------+------------------------------------------|
+| [[Phase-1]] | 2022-07-29 | ---        | 2 wks    | Started | Encrypted File Parameter & Marmee        |
+| [[Phase-2]] | ---        | ---        | 5 wks    | Planned | LCNT Cleanups & Modernization & 120033   |
+| [[Phase-3]] | ---        | ---        | 6 wks    | Planned | CS,  Pals, Qmail, Hugo, CleanBoot        |
+| [[Phase-4]] | ---        | ---        | 3 wks    | Planned | Transition mohsen.byname with Old Regs   |
+| [[Phase-5]] | ---        | ---        | 6 wks    | Planned | RO&DomainRegistrars, Batch PALS Creation |
+| [[Phase-6]] | ---        | ---        | 4 wks    | Planned | Transition of Existing Sites             |
+| [[Phase-7]] | ---        | ---        | 6 wks    | Planned | Django Based Services Creation           |
+| [[Phase-8]] | ---        | ---        | 4 wks    | Planned | Cleanups And Release                     |
+|---------+------------+------------+----------+---------+------------------------------------------|
+
+ End Of Phase-4                        16 weeks --- 4 months
+ End Of Phase-4                        26 weeks --- 6.5 months
+ End of Phase-8                        38 weeks --- 9.5 months
+
+** +
+** Next Steps
+*** +
+*** --------------  Sept 15, 2022 Start Date ---------------
+*** DONE Complete ro_fps in ro.py csRos-manage.cs
+*** DONE Add menu to fpCls as cmnd
+*** TODO Cleanup ro_fps and fpCls and Fully use FpCsParam and Rename to FpCmndParamBase
+*** DONE Add :ro noCli to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
+*** DONE With :ro "py" provide code for remote inv. Test pyInv and pyRoInv
+*** TODO Take code from examples/roPy_csu.py and include it in dblock :ro py
+*** DONE Create new snippets for file segments and new dblocks --
+*** DONE For cs-mu use csExamples.cs as template -- Identify new needed dblocks (b:py3:cs:file/controls + inMainExpected Symbols)
+*** DONE For cs-u use examples/parsArgsStdinCmndResult_csu.py -- Identify sections
+*** DONE Identify all old dblocks and modernize them
+*** WAITING For templates get to 0 typing warnings -- Done in csExamples.cs not parsArgsStdinCmndResult_csu.py
+*** DONE Cleanup b. b.cs and b_io
+*** DONE Start with b_io, drive it with csExamples.cs
+*** WAITING See if we can eliminate ast modules. Use log for file, line
+*** DONE Re-visit convertIcmToCs.sh
+*** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022 ---Completed Sept 25, 2022
+*** DONE Revive encrypted file params with new CS
+*** DONE Revive bpo-vault.cs and bpo-gpg.cs
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** DONE Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** ---- Revive and complete MARMEE with new CS ----
+*** WAITING Render obsoleted saiInMailControl.py --- Replace it with aasInFps.py
+*** WAITING Rename saiInMailOfflineimap.py to aasInOfflineimap.py
+*** DONE Rename marmeeSaiInMail.cs to marmeeAasIn.cs
+*** DONE Convert  -- gmailOauth2.cs --- Keep old as gmailOauth2Icm.cs
+*** DONE Convert  -- qmail-remote.cs --- Keep old as qmail-remoteIcm.cs
+*** DONE Add to aasMarmeeManage.cs support for oAuthCredentials and outgoing accounts
+**** DONE identift Oauth Params and ClsFp them with secret being fpCrypt
+**** DONE Set initial setups in niche
+**** DONE Consider aasMarmeeManage.cs on top of aasInFps.py aasOutFps.py aasGeneralFps.py
+*** DONE Complete -- marmeeGmailOauth2.cs, A full fledged with ins and outs in the marmee space
+**** DONE Read credentials from aas/marmee/gmail/general/oauth2/secret ...
+**** DONE Write tokens to gmailAcctBases
+*** WAITING Complete marmeeAasIn.cs based on gmailOauth2.py outputs (imap retreives)
+*** WAITING Complete qmail-remote.cs based on gmailOauth2.py outputs
+*** TODO Automate continous running of marmeeAasIn.cs
+*** DONE Cleanup marmee as package
+*** DONE Add currents specification for use in panles
+*** DONE Setup marmee panel
+*** WAITING Complete blee/emacs-developers-requests repo.
+*** Use marmee live on multiple machines informally
+*** ----P2::  All of above 2 weeks? ---- Due Dec 6, 2022 (Updated on Nov 23rd)
+*** --------------  EmacsConf Begin ------------  Oct 24, 2022
+*** DONE Edit summary on wiki, similar to 2021 --- Target Oct 29
+*** DONE Verify reveal  machinary from last year
+*** DONE Absorb and complete bisos-apps/lcnt panels
+*** DONE Add all the drawings --- Add graphics to latex drawing
+*** DONE Start an early 0.1 base. Experiment with voice recordings  --- Target Oct 29
+*** DONE Absorbe Sacha's Closed Captioning Tools
+*** DONE Complete Video --- Target  November 18
+*** DONE Improve latex build machinary along with 120033
+*** DONE Drive reveal in parallel with 180051
+*** --------------  EmacsConf End ------------  December 4, 2022
+*** --- <<LcntMachinary>>---  Nature Of Polyexistence Publication Begin ------------  December 15, 2022
+*** /bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/evolution/_nodeBase_/fullUsagePanel-en.org
+***                                       =======================
+*** [[elisp:(find-file "/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org")][/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org]]
+*** -
+*** --------------  Nature Of Polyexistence Publication End  ------------  January 31, 2023
+
+*** -------------- Release of CS and Marmee On Multiple Machines ------------
+*** +
+*** TODO add /bisos/venv/py3/adopted  For non local tools
+*** Build roSiteRegistrar.cs
+*** Pass pkgs through git and publish on pypi
+*** Remotely test roSiteRegistrar.cs
+*** PyCS Documentaion
+*** Release Marmee and verify on multiple machines
+*** ---- P3:: All of above 1 week? ----   Target November 14
+*** Rebuild from scratch pure and VM
+*** Add bso creation to bpo creation in python
+*** Redo site construction
+*** ---- P4:: All of above 2 weeks? ----
+*** Revivie Pals
+*** With PALS redo Qmail and Hugo
+*** With PALS redo plone (Perhaps NOT)
+*** Build new registrars
+*** Site construction with new registrars
+*** ---- P5:: All of above 4.5 weeks? ----
+*** Transition mohsen.byname
+***  ---- P6:: All of above 2 weeks? ----
+*** -------------------------------------------------------
+*** Grand total  1 + 2 + .5 + 2 + 5 + 2  == 12.5  (Dec 31, 2022)
+*** 12033 publication 4 weeks
+*** ----------------------------------------------(Jan 31, 2023)
+*** [[Phase-5]]   6-weeks
+*** [[Phase-6]]   4 Weeks
+*** ----------------------------------------------(April  15, 2023)
+*** [[Phase 7]]  6 weeks
+*** [[Phase 8]]  4 weeks
+*** ---------------------------------------------(July 15, 2023)
+*** -
+** Encrypted File Parameter & Marmee --- <<Phase-1>> --- 2 Weeks Total
+[[Phase-1.1]]   19h
+[[Phase-1.2]]   25h
+[[Phase-1.3]]   37h
+-------------------
+81 Hours
+
+*** File Parameters Design --- IMPORTANT -- <<Phase-1.1>>
+**** +
+**** Key Decisions. We will use Symetric Keys. SymKeys are encrypted with pubKeys. Passwds are in KeePass Vault.
+**** Each fp may have an encryptionType FV. Usually bxSym. fp has an encryptionScope curBpo, site, etc.
+**** Each BPO has a GPG repo. That GPG repo is used as base.
+**** Each BPO has a Vaults repo.
+**** Each BPO has a secrets repo. Which contains the  encrypted symKey.
+**** Keys in GPG repo are created with purpose as index. Their passwords are auto gened and stored in BPO-Vault.
+**** The following inits are assumed. BPO-PGP-Key, BPO-Vault, BPO-Secret FP.
+**** On FP Write, Param is sym-encrypted with decrypted symKey using PGP-repo & vault. scope & type is recorded.
+**** On FP Read, base don scope and type, Param is sym-decrypted with decrypted symKey using PGP-repo & vault.
+**** Implemetation Order:
+***** +
+***** TODO Create a bisos crypt panel
+***** [4h] Build a in bisos.crypt build bx-vault library based on pykeepass-cache.
+***** [4h] Build a bisos.gpg library.
+***** [3h] Create, vault, gpg and secrets repos for a given bpo.
+***** [6h] Revisit bpf.fp library.
+***** [2h] Update FP Panel And Capture new info
+***** -
+**** Totals: 19h
+**** -
+*** Complete MARMEE Transition --- IMPORTANT -- <<Phase-1.2>>
+**** +
+**** Implementation Order:
+***** 1) [4h]Build offlineimaprc based on encFPs.
+Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
+***** 2) [4h] Absorbe gmail oauth in bx, based on FPs.
+***** 3) [3h] Setup qmail as in 1005 --- Cultivate eoqMail (Edge-Oriented QMail)
+***** 4) [4h] Make qmail-remote work right with encrypted FPs --- Absorb send.py
+***** 5) [8h] Transition rest of the old Marme features: Mail Sending and DSN Processing.
+***** 6) [3h] Cleanup and get rid of old marme files.
+***** 7) [3h] Update Marmee Panel And Capture new info
+**** Totals: 25h
+**** -
+*** Bootstrap Self-Contained BISOS  --- IMPORTANT -- <<Phase-1.3>>
+**** +
+**** [2h] Pass everything through git
+**** [3h] Push all pkgs to pypi
+**** [8h] Rebuild and test with production venv
+**** [24h] Rebuild and test in VM.
+**** Totals: 37h
+**** -
+** CS Library Transition
+*** Document The Design In Panel
+***  Module Restructuring and cleanups.
+**** +
+**** DONE Redo and cleanup examples.py <2022-08-21 Sun 22:35>
+**** DONE Remove examples from cs.py <2022-08-21 Sun 22:35>
+**** DONE In cs.py global fix all ucf refs and all TM, EH, LOG
+**** DONE Cleanup io and and bpf
+**** DONE End to end test with new examples
+**** DONE Redo and cleanup inCmnd.py
+**** DONE Remove in-cmnds from cs.py
+**** DONE End to end test with new inCmnd.py
+**** DONE Redo and cleanup runArgs.py
+**** DONE Remove runArgs from cs.py
+**** DONE End to end test with new runArgs.py
+**** TODO Redo and cleanup param.py
+**** DONE Remove param.py from cs.py
+**** WAITING End to end test with new param.py   ~NEXT~
+**** TODO Redo and cleanup arg.py   ~NEXT~
+**** DONE Remove arg.py from cs.py
+**** WAITING End to end test with new arg.py
+**** Cleanup the remaining cs.py
+**** TODO Absorb gitShRemOp in rem.py
+**** WAITING Absorb aipx.cs in cs/bin
+
+**** WAITING Re-visit logging in io
+**** DONE Cleanup all of io
+**** Cleanup all of bpf
+**** WAITING Re-do dblocks
+**** WAITING Build mass transitioner convertIcmToCs.sh
+**** DONE Automate CS importation with dblock
+**** -
+*** -
+***  Addition of RPyC Invoker/Performer
+**** +
+**** DONE *TODO In cmnd replace interactive with rtInv ~NEXT~ Urgent
+**** Revisit work done with gitSh as transport
+**** Live with a simple RPyC Performer for now
+**** Add invoker feature to cmnd dispatch
+**** Revisit cs.Cmnd for remote invocation programtically and from cmndLine.
+**** Build csRoManager.cs
+**** Build csAipx.cs
+**** -
+***  Testing And Examples
+**** +
+**** Create test examples for various features
+**** -
+***  Mass transition to new CS
+**** +
+**** Convert all of Marmee to new CS
+**** Continue with File Parameters
+**** -
+*** LCNT Cleanups & Modernization & 120033 --- <<Phase-2>>  --- 5 Weeks Total
+
+***  LCNT Cleanups And Modernization --- Phase-2.1
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Split 120033 into Two --- Phase-2.2
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Update Both Documents --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Run Docs Through Microsoft Word and Others --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Publish Both Documents --- Phase-2.4
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+** CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot --- <<Phase-3>>  --- 6 Weeks Total
+*** TODO Transition From ICM To CS --- Phase-3.1  --- 5 Weeks Total
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Complete GitSh Remote Operations --- Phase-3.2
+*** +
+*** A Starting Point Panel
+*** -
+*** TODO Test Out A Registrar service --- Phase-3.2.1
+**** +
+**** With Object-Ids
+**** -
+*** TODO Complete Pals Base Implementation  --- Phase-3.3
+**** +
+**** A Starting Point Panel
+**** -
+*** TODO Use Pals To Implement Jekyl  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement Geneweb  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement qmail  --- Phase-3.5
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Release Phase 3  --- Phase-3.6
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+** Transition mohsen.byname with Old Registrars  --- <<Phase-4>>  --- 3 Weeks Total
+*** TODO Rebuild Exisiting Physical And VM  --- Phase-4.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO mohsen.byname Transition Based on Exisiting  --- Phase-4.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** RO&DomainRegistrars, Batch PALS Creation  --- <<Phase-5>> 6 Weeks Total
+*** TODO Re-Visit Site Bootstrap  --- Phase-5.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+***** TODO Re-Create All Registrations Based on Services  --- Phase-5.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Update And Re-Implement BPO Creation --- Phase-5.3
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Create Domain Registrars --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Batch Pals Creation --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** Transition of Existing Sites --- <<Phase-6>> 4 Weeks
+*** +
+*** Rebuild Physical and VMs based on existing
+*** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** TODO Evaluate pykeepass and pykeepass-cache   --- gpg --gen-random --armor 1 14
+** TODO Buy into RPyC In a big way.
+*** https://programtalk.com/python-examples/rpyc.utils.factory.ssl_connect/
+*** https://docs.python.org/3/library/ssl.html
+** TODO Create a "BISOS Overview" Panel. In there, have a Fundamental Constructs Panels.
+In document start with Unix constructs, Emacs constructs, Org-Mode Constructs, Git Constructs.
+** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
+** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-auth-oauthlib
+** TODO IMPORTANT -- Digest https://github.com/larsmagne/make-mta
+** TODO Arrange for creation of du_jekyll/sites/main/dump in various steps. main gets added
+with instance. du_jekyll/sites/main needs to be parametrized in siJekyll.
+** TODO Capture automation of jekyll build
+*** +
+*** cd jekyll baseDir # from that dir
+*** sudo jekyll build -s ~pals/../var/site
+*** Get more info: Google christopherrun.com -- apache-and-jekyll + MORE LINKS
+**** +
+**** https://www.ssh.com/academy/ssh/copy-id
+**** https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+**** https://www.digitalocean.com/community/tutorials/how-to-deploy-a-jekyll-site-using-git-hooks-on-ubuntu-16-04
+**** -
+*** -
+** TODO Complete cntnrGitShTrigger,sh
+** TODO Add si_apache2 to ByD_100002
+** TODO Add si_geneweb to ByD_100002
+** TODO Automate jekyll with git postprocessing
+** TODO Build a minimal based jekyll for libre-halaal using
+** TODO Cleanup PALS
+** TODO Try out plone3 Rebuild
+** TODO Rebuild from scratch in 198.62.92
+**
+** TODO
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Current Development Context" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** -
+** TODO Capture mkv2mp4 and rest from persoArabic
+** fpi -- stand for File-based Performers And Invokers Model
+** fpiPerfIcmAt icmName /baseDir/name
+** fpiInvIcmAt icmName /baseDir/name  -- params and command and args
+** TODO create /bisos/var/gitSh//invoker/jekyll/ And performer to pull for work of performer.
+** TODO Start using cntnrGitShTriggers.sh for all assign and registrars.
+*** +
+*** To be evaluated against gRPC
+*** This will eliminate the need to activate the registrars. We can now just readonly clone them.
+*** This elimintaes possibility of simultanous assignments.
+*** It is an interim step before turning them to web services.
+*** -
+** TODO Unifications Of Operations, Remote-Operations And Commands -- Basis For Nullification Of The Model And Terminology Of APIs And Web Services
+*** https://queue.acm.org/detail.cfm?id=1142044
+***  https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/
+** TODO Typing hints for all commands need to be added. :parsMand "bpoId si" are all string.
+*** This needs to go into bx:icm:python:cmnd:classHead
+** TODO BISOS Py Framework -- OpedSubProc -- Desired Usages:
+if not (resStr := bpf.OpSubProc(outcome=cmndOutcome, log=1).sudoBash(
+    f"""a2ensite {ploneBaseDomain}.conf""",
+).stdOut):  return(icm.EH_badOutcome(cmndOutcome))
+
+if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
+    f"""a2ensite {ploneBaseDomain}.conf""",
+).isProblematic():  return(icm.EH_badOutcome(cmndOutcome))
+
+** https://marulanda.me/how-to-jekyll/ git hook
+** TODO Review /bisos/core/asc/dns/bin/seedBsrDnsAgent.sh and build on that.
+** TODO Create a "System Container" Menu Item -- Then Development -- Then Select USG BPO
+** TODO Early on somewhere we should: bisosCurrentsManage.sh -h -v -n showRun -i setParam cur_bxoId_parent prs_bisos
+** TODO Where should this happen or be documented: sysCharManage.sh -h -v -n showRun -p bxoId=sysChar -i cntnr_netName_interfaceUpdate privA enp0s31f6 enabled
+** DONE Build on usgBpos Controller to create -niches to fully set environments.
+** TODO Do the usgEnv end-to-end testing in virtual machines, then try them on chromebooks.
+** DONE Added to lcaPythonCommonBinsPrep.sh -- gcipher should be pip installed in the begining
+** TODO ln -s ~/bpos/usageEnvs/fullUse/blee BUE
+** TODO Fresh BOX Deployment Next Steps
+*** 
+*** Cleanup and fix repos and process at 192.168.0.34
+*** 
+** TODO Setup Virt Hosting On Guest Boxes On HSS-1002 or HSS-1003
+*** 
+*** TODO KVM BinsPrep, Vagrant BinsPrep
+*** TODO Build baseBoxes
+*** TODO Run a generic virtualized VM
+*** TODO Add all of the above to /bisos/bsip/bin/bxmoSysChar.sh
+*** TODO Test auto launch of VMs on re-boot
+****
+** TODO DHCP-Server SysChar On HSS-1002 or HSS-1003
+*** 
+*** TODO On HSS-1002, install boxHostingPlatform.sh
+*** TODO Setup VSS-xxx 
+*** 
+** TODO SYS-MGMT: Setup a SitePanel with needed dblocks
+*** 
+*** Organize the SitePanel -- boxes, networks, containers, etc
+*** Create dblocks for containers
+*** RealmExtensions
+*** 
+** TODO Fresh BOX deployment Bugs -- IMPORTANT And Urgent
+*** TODO /bxo/r3/iso/pis_defaultSite  is there for general public out of the box experince
+    needs to be made public? or what?
+*** 
+** TODO Fresh VM Deploy Bugs -- IMPORTANT And Urgent
+*** 
+*** SysDeploy -- Needs to be broken into Guest/VM Deploy and Box Deploy
+*** sysCharGuestPrep.sh is part of HostDeploy not of GuestDeploy
+*** 
+*** TODO Get rid of /bxo/r3/iso/pis_defaultSite/bootstrap but after fixing pis_defaultSite/sys/bin symlinks
+*** TODO Missing /bisos/git/auth/bxRepos/bisos-pip/bxoGitlab
+*** bisosSiteSetup.sh Temporary Site
+*** bisosSiteSetup.sh -i fullUpdate
+*** bxoManage.sh -p bxoId="pmp_VSG-ub2004_" -i fullConstruct
+*** TODO sudo ifdown -a; sudo ifup -a -- After identitySet with ifconfig iFace up
+*** 
+** TODO Fresh VM Deploy DEVELOPMENT Bugs -- IMPORTANT And Urgent
+*** 
+*** TODO *Important* What should setup ~/bisos/sites/selected ? 
+*** TODO *Important* What should setup ~/bxo/usageEnv/selected ? -- Perhaps ~/bisos and ~/bxo should be merged? 
+*** TODO *Important* What should setup ~/bpos/usageEnv/selected ? -- ~/bisos and ~/bxo ~/bpos should be merged? 
+*** 
+*** TODO Complete and adopt ~piu_mbBisosDev/sys/bin/ -niche.sh concepts.
+*** 
+** TODO Continue with /bisos/bsip/bin/sysCharGuestMaterialize.sh
+** TODO Continue with /bisos/bsip/bin/sysCharDeploy.sh
+** Redo RepoCreation based on /bxo/r3/iso/pmc_clusterNeda-containers/VAG-deb10- 
+**** Get rid of identity.fps/  netAttachments.fps/  platformInfo.fps/
+** Experiment with specific on top of generic in -- sysCharGuestMaterialize.sh
+** 
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs, Problems And Next Steps" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Create a bisos.systemd manager package --- https://github.com/torfsen/python-systemd-tutorial
+** TODO Add to presentation \usepackage{qrcode}  %%% Must come after beamerarticle
+** TODO pandoc should be brought over at some point in one of the binspreps.
+** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html
+** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
+** TODO For testing Use https://www.mail-tester.com/
+** TODO Capture this: Qmail NOTES https://notes.sagredo.eu/en/qmail-notes-185/configuring-dkim-for-qmail-92.html
+** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
+** TODO keepassxc bins prep is missing.
+** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
+** TODO Add This: realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
+** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
+** TODO  Locate all dangling symlinks with find -L
+*** locate find -L  /bisos /de /bxo  -print | grep -i "someThingThatShouldNotExist"
+** TODO [#A] pip install deprecated -- IMPORTANT AND URGENT
+SCHEDULED: <2021-12-02 Thu>
+** TODO /bisos/core/bsip/bin/usgBpoSshManage.sh and usgBpoSshCustom should be merged.
+** TODO pip install deprecated
+** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
+** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
+** TODO Move /bisos/core/asc to /bisos/asc
+** DONE bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
+** TODO apt-get whois
+** TODO pmi_ByN-100001/par.live.git  -- Should become par-live
+** TODO Initial hostname should include .intra for qmail install
+** TODO bashrc prompt should strip .intra
+** TODO Re-run-as-root needs to be revisited to keep initialInvokerUser as a parameter.
+   Test it with lcaKvmBinsPrep.sh
+** TODO Cleanups: Delete All typeset RcsId=.$Id: From all ShIcms
+** TODO bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
+   class acctList(icm.Cmnd):
+    cmndParamsMandatory = [ ]
+    cmndParamsOptional = [ ]
+    cmndArgsLen = {'Min': 0, 'Max': 0,}
+
+    @icm.subjectToTracking(fnLoc=True, fnEntry=True, fnExit=True)
+    def cmnd(self,
+        interactive=False,        # Can also be called non-interactively
+    ):
+        cmndOutcome = self.getOpOutcome()
+        if interactive:
+            if not self.cmndLineValidate(outcome=cmndOutcome):
+                return cmndOutcome
+
+        callParamsDict = {}
+        if not icm.cmndCallParamsValidate(callParamsDict, interactive, outcome=cmndOutcome):
+            return cmndOutcome
+
+####+END:
+
+        gl = bxoGitlab_connect()
+
+        users = gl.users.list(all=True)
+
+        for eachUser in users:
+            print(eachUser.username)
+
+        return cmndOutcome.set(
+            opError=icm.OpError.Success,
+            opResults=None,
+        )
+
+** TODO DEB-10 problems -- linux-headers is not a package
+** TODO [800]: abode=Mobile vis_nat_update 
+/bisos/core/bsip/lib/opDoLib.sh: line 332: vis_nat_update: command not found
+** TODO ~bystar permissions were wrong for DEB-10.
+** TODO Disable Network Interfaces
+sudo ifdown --admin-state swp1
+Comment out auto line in /etc/network/interfaces
+auto swp1
+iface swp1
+    link-down yes
+** TODO Global Terminology Change Overview (content) |
+*** _Sys Types_
+*** Box is either Pure Or Host
+*** Guest is peer to Box
+*** Sys is either Box or Guest
+*** _Sys Evolution_
+*** Sys Distro
+*** BxPlatform (Distro is loaded with Bx Software)
+*** BxSitePlatform (BxPlatform + Activation 
+*** BxContainer
+*** _BxContainer Choices_
+*** Auto -- dhcp assigned -- Used for development and experimentation
+*** Generic -- static from a Generic pool -- Used for  development and experimentation
+*** Specific -- For deployment
+** TODO Global Terminology Change For Next Major Release -- bxo becomes bpo -- ByStar Portable Object
+** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
+** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr=
+** TODO BISOS Concepts -- Conviviality -- Universality -- Genercity -- Exensibility
+** TODO lpEach.sh should read its inputs optionally as lines or as words
+** TODO lpEach.sh should optionally execute its produced lines or pass through lpEach.sh | bxRunLines
+** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
+** TODO in sysCharGuest, git rid of testNet
+** TODO IMPORTANT sysCharDevel.sh prompts for github confirmation -- cant be automated run
+** TODO IMPORTANT Absorb autostart in /bisos/bsip/bin/hostVirshManage.sh
+sudo systemctl stop libvirt-guests   # stops VMs
+sudo systemctl restart libvirtd      # starts VMs agains
+sudo virsh net-autostart --network vagrant-libvirt
+sudo virsh net-start --network vagrant-libvirt
+sudo virsh net-autostart --network default
+sudo virsh net-start --network default
+sudo virsh net-list --all
+** sysCharRealize problem --   parName=distro  is not set 
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distro -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,331
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distroType -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,429
+** TODO pubB and pubB-control should exist but be unassigned
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,419
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB-control -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,515
+** TODO sysCharRealize problem
+   VIS-1002-5: ** [182]: sysCharRealize.sh -h -v -n showRun -p bxoId=pmp_VIS-1002 -i basesFullCreate 
+    VIS-1002-5: EH_,siteContainerAssign.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: siteContainerAssign.sh::vis_fromBxoIdFindContainerBase[213]: eval [[ 0 -eq 1 ]] [ErrCode]= 1
+    VIS-1002-5: ** [514]: vis_accountVerify pms_clusterNeda 1000003 2222 /bxo/iso/pms_clusterNeda 
+    VIS-1002-5: EH_,bisosSiteSetup.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: bisosSiteSetup.sh::vis_fromSiteBxoIdGet_domainsBxoId[356]: eval [ ! -z ] [ErrCode]= 1
+** TODO Initial lpCurrents
+    VIS-1002-5: ** [202]: bxeRealize.sh -n showRun -v -h -p bxoId=prs_bisos -p privacy=priv -p bxeDesc=/bisos/var/bxo/construct/priv/prs_bisos/rbxe/bxeDesc -i bxoAcctCreate 
+    VIS-1002-5: EH_,bxeRealize.sh,lpCurrentsGet,104: PROBLEM: Missing bxoAcctsList
+** DONE apt install nmap in sysEssentials
+** TODO Where should -- sudo apt install firmware-linux -- for deb 11 go?
+** TODO Create sysCharSetup.sh -- fillup content from ~sysChar/sys/bin
+** TODO Revisit  sysCharHostPreps.sh
+** DONE Setup Devel/Stable in ~sysChar/var/devel
+** DONE Based on Devel/Stable -- do auth-git or anon-git
+** DONE Based on Devel/Stable -- Also activte pmp_VAG-deb11_ in addition to pmp_VAG-deb11_
+** TODO has bad permission /bxo/usg/bystar/.ssh/id_rsa -- probably inherited from /bxo
+** TODO /bisos/bsip/bin/bxoPubGithubManage.sh git clone should depend on dev and perhaps use github auth
+** TODO onSysInvokation only. Some functions should only run on thisSys and not on otherwise.
+** TODO In sysEssentialsBinsPrep.sh also get gparted.
+** WAITING Disable auto suspend on Deb11 --- Needs Testing
+*** sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+*** Do not autosuspend  -- details 
+# - Do not autosuspend
+
+[org/gnome/settings-daemon/plugins/power]
+
+sleep-inactive-ac-type='blank'
+** WAITING Early git config --global setups -- Done in ~/.bashrc Needs Testing
+git config --global init.defaultBranch master
+git config --global pull.rebase false
+** DONE Complete howToBecomeDeveloper and add it to sysCharDeploy.sh _URGENT_ -- bisosBaseDirs-niche.sh
+** DONE /bisos/panels should be a symlink to /bisos/git/bxRepos/blee-binders _IMPORTANT_
+** DONE deb11 emacs-27 install problems *TO BE CAPTURED BLEE*
+*** lcaEmcsSrcBinsPrep.sh line 707 duplicate with elif
+*** sudo chmod -R g+w /bisos -- deb11
+*** sudo chmod -R g+w /var/bisos
+*** DONE Missing epc package -- Important
+*** TODO Missing package org-recoll -- /bisos/blee/extPkgs/org-recoll
+** deb10 blee does not boot with  emacs26 
+** TODO New _docStringBegin
+function vis_siteUsgBase {
+    G_funcEntry; function describeF {  G_funcEntryShow;
+####+END:
+_docStringBegin_
+*** Activate the specified bxoId 
+_docStringEnd_
+				    }
+     EH_assert
+}
+				    
+** TODO /bisos/git/bxRepos/bisos/apps needs to be auto retrieved (cloned)
+** Building vagrant baseboxes. -- https://blog.engineyard.com/building-a-vagrant-box
+** https://leyhline.github.io/2019/02/16/creating-a-vagrant-base-box/
+** https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
+** TODO bleeclient.sh -i emlFrame -- takes stdin, puts it in a tmp file, creates a 
+** TODO Buy into --  startOrgPanel.sh -i examples | emlOutFilter.sh -i iimToEmlStdout | bleeclient.sh -
+** TODO better -- startOrgPanel.sh -i examples | shIcmToEml | bleeclient.sh -i emlFrame
+** TODO better -- startOrgPanel.sh -i examples | pyIcmToEml | bleeclient.sh -i emlFrame
+** TODO more better: shIcmPlayer startOrgPanel.sh  -- pyIcmPlayer example.py
+** TODO Add panels search bottons -- find|grep for panelNames, findXargs, org-recoll search engines
+   SCHEDULED: <2021-01-27 Wed>
+** TODO Add all folders from /bisos/core of /bisos/panels/bisos-core/baseDirs/bisosBaseDirs/fullUsagePanel-en.org
+   SCHEDULED: <2021-01-24 Sun>
+** TODO Add bx:bsip:bash/libLoadOnce to libraries -- Test single inclusions.
+** TODO Move All bins Preps from /opt/public
+** TODO Define full set of provision targets
+** TODO Get bx-gitRepos.sh to be complete and in use
+** TODO sudo apt install ubuntu-restricted-extras
+** TODO Make sure pip2 install bisos.currents is included
+** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Planned Features" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Use Django https://github.com/viewflow/viewflow
+** In BISOS documentation, Introduce BISDF (ByStar Internet Services Development Framework)
+** Replace .ttytex with .mtx  --- Main/Master TeX module.
+** Use gRPC -- Not OpenAPI, REST, etc.
+** https://github.com/tomyjwu/python-microsrvices-with-grpc
+** https://realpython.com/python-microservices-grpc/
+** https://github.com/ruan65/Python-Microservices-With-gRPC
+** https://github.com/moratsam/cloud1
+** Static Site Generators -- Selected Jekyll -- Considered: Grow, ikiwiki, Hugo, Jekyll
+** org-reveal -- jens.lechtenboerger@wi.uni-muenster.de
+** To ShIcm add -m option where describeF is produced with something similar to G_funcEntry and trace.
+** Facter
+    y = json.loads(subprocess.check_output(['facter', '--json']), object_hook=lambda d: namedtuple('Factset', d.keys())(*d.values()))
+
+>>> dir(y)
+['__add__', '__class__', '__contains__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_asdict', '_fields', '_make', '_replace', 'architecture', 'count', 'domain', 'facterversion', 'fqdn', 'gid', 'hardwareisa', 'hardwaremodel', 'hostname', 'id', 'index', 'interfaces', 'ipaddress', 'ipaddress6', 'ipaddress6_en0', 'ipaddress_en0', 'ipaddress_lo0', 'is_virtual', 'kernel', 'kernelmajversion', 'kernelrelease', 'kernelversion', 'macaddress', 'macaddress_awdl0', 'macaddress_bridge0', 'macaddress_en0', 'macaddress_en1', 'macaddress_en2', 'macaddress_p2p0', 'macosx_buildversion', 'macosx_productname', 'macosx_productversion', 'macosx_productversion_major', 'macosx_productversion_minor', 'memoryfree', 'memoryfree_mb', 'memorysize', 'memorysize_mb', 'mtu_awdl0', 'mtu_bridge0', 'mtu_en0', 'mtu_en1', 'mtu_en2', 'mtu_gif0', 'mtu_lo0', 'mtu_p2p0', 'mtu_stf0', 'netmask', 'netmask_en0', 'netmask_lo0', 'network_en0', 'network_lo0', 'operatingsystem', 'operatingsystemmajrelease', 'operatingsystemrelease', 'os', 'osfamily', 'path', 'processorcount', 'processors', 'productname', 'ps', 'puppetversion', 'rubyplatform', 'rubysitedir', 'rubyversion', 'sp_boot_mode', 'sp_boot_rom_version', 'sp_boot_volume', 'sp_cpu_type', 'sp_current_processor_speed', 'sp_kernel_version', 'sp_l2_cache_core', 'sp_l3_cache', 'sp_local_host_name', 'sp_machine_model', 'sp_machine_name', 'sp_number_processors', 'sp_os_version', 'sp_packages', 'sp_physical_memory', 'sp_platform_uuid', 'sp_secure_vm', 'sp_serial_number', 'sp_smc_version_system', 'sp_uptime', 'sp_user_name', 'swapencrypted', 'swapfree', 'swapfree_mb', 'swapsize', 'swapsize_mb', 'system_uptime', 'timezone', 'uptime', 'uptime_days', 'uptime_hours', 'uptime_seconds', 'virtual']
+
+>>> y.memorysize
+u'16.00 GB'
+** Default daemonized emacs/blee server for remote ssh
+*** 
+*** Figure the problem with sysCharRealize.sh step when ssh-ed into target
+*** Look into emacs server selection as a daemon -- https://www.emacswiki.org/emacs/EmacsAsDaemon
+*** Look into emacs server selection as a daemon -- https://www.emacswiki.org/emacs/MultiEmacsServer
+*** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Python BISOS/Blee Transition" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Python BISOS/Blee Transition:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Python 2.7 to 3.X Transition" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Python 2.7 to 3.X Transition:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Blee Python" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Blee Python:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** DONE Snippets -- VirtEnv Activation/Deactivations
+*** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "PyPiProc and BISOS Python Infra" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /PyPiProc and BISOS Python Infra:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** [2021-04-09 Fri] -- Current Status -- pypiProc.sh only works on bisp007 py2 - and - ub1604
+*** Order Of Execution -- After Generic Development VMs
+*** TODO seedPypiProc.sh needs to be adopted in bsip
+*** TODO Use Keypass for passwords for credentials
+*** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Typed-Python Invoke-Perform Commands Services (IPCS)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Typed-Python Invoke-Perform Commands Services (IPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** For documentation use facterIcm.py as example for everything.
+** Prior Art: click, typer, cyto, argparse, click, docopt, fire, typer, plumbum, and cleo.
+*** +
+*** https://github.com/sbtinstruments/cyto/blob/master/cyto/settings/sources/cli/_cli.py
+*** https://github.com/sbtinstruments/cyto/blob/master/tests/settings/sources/test_source_cli.py
+*** https://pypi.org/project/cyto/
+*** -
+** Related Tools:
+*** +
+*** pydantic
+*** fabric, subProc
+*** -
+** CLI-Options vs Op/Cmnd-Parameters -- Pydantic, Field, Schema -- use description
+on field, same as schema does now.
+** https://github.com/samuelcolvin/pydantic/issues/756
+** IPCS is a collection of IPCMs
+** IPCMs are next generation ICMs
+** IPCM's performer() method replaces ICM's cmnd()
+** IPCM's have an opSignature which defines the signature of performer()
+** opSignature includes: cmndParamsMandatory = [ ] cmndParamsOptional = [ ] cmndArgsLen = {'Min': 1, 'Max': 9999,}
+** CmndSignature and performerSignature should be consistent. CmndSignature is richer.
+** https://stackoverflow.com/questions/2677185/how-can-i-read-a-functions-signature-including-default-argument-values
+** To that we need to add: cmndStdIn, cmndArgsSpec, cmndOutcome, endOfParamsMarker?
+** Each performer() has a invoker=[cli, py, op, performer,] -- currently cmnd(interactive=False,
+** invoker= replaces asFunc= and interactive=
+** SubClassing Cmnd involves defining opSignature, argsSpecs, and performer()
+** All front end bx:icm:python:cmnd:classHead, be replaced with a single validate() later as @deco
+** Above replacement. We use cmnd(** kwargs), which does the @validate.
+** csBase=invPerfPath -- invForm='fps' perfForm='fps'
+** All front end bx:icm:python:cmnd:classHead, will get a @outcomeRecorder(form='fps')
+This will use self.inArgs=perfOuts  -- incontrast to invIns
+We then get outcome and write it at perfOuts.
+
+def check_authorization(f):
+    def wrapper(*args):
+        print args[0].url
+        return f(*args)
+    return wrapper
+
+class Client(object):
+    def __init__(self, url):
+        self.url = url
+
+    @check_authorization
+    def get(self):
+        print 'get'
+
+>>> Client('http://www.google.com').get()
+http://www.google.com
+get
+The decorator intercepts the method arguments; the first argument is the instance, so it reads the attribute off of that. You can pass in the attribute name as a string to the decorator and use getattr if you don't want to hardcode the attribute name:
+
+def check_authorization(attribute):
+    def _check_authorization(f):
+        def wrapper(self, *args):
+            print getattr(self, attribute)
+            return f(self, *args)
+        return wrapper
+    return _check_authorization
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Other Sub-Title: A Framework For Uniting Command-Lines And Web-Services
+** Sub-Title: Based On Expectations Complete Typed-Python Operations Specifications
+** SubSub-Title: A Replacement For The Flawed Web Services Model
+** ---
+** The Popular Web Services Model Has Been A Costly Red Herring
+*** +
+*** Multiple attempts, re-inventing the basic simple smae thing.
+*** Informal imprecise langauge leading to chaos.
+*** Tower of babel. Wikipeia: There is no single definition for microservices.
+*** Shallow understaning with hacks on top of hacks leading to a house of cards.
+*** Failure of Data Communications, Software Language Designers and Systems Engineers
+and Security Engineers to collaborate towards standardizition
+*** A market for vendors to increase complexity in the name improvement.
+*** Shallow convergence on authentication and authorization models.
+*** ---
+*** Design Mistakes:
+*** Ill directed concepts and terminology. Client/Server vs Invoke/Perform Request/Respons vs Params/Outcome
+*** Remote Operations, should not be tied to web protocols
+*** Capabilities Of Information Schema Languages should uniformly encompass all
+*** Design style should not be intertwined with schema and protocol.
+*** -
+** ---
+** Typed-Python (and pydantic) as The Univeral Information Schema Language
+*** +
+*** https://github.com/samuelcolvin/pydantic/issues/756
+*** https://typer.tiangolo.com/
+*** Making something more abstract makes it more precise
+*** https://medium.com/swlh/cool-things-you-can-do-with-pydantic-fc1c948fbde0
+*** No need for OpenApi, ProtoBuf Syntax
+*** Convergence on Python Vs Xml. English vs Esperato. + Execution allows for remote code and reference implementation.
+*** -
+** ---
+** Concepts Hierarchy -- Terminology And Implementation Hierarch
+*** +
+*** Operations And Remote Operations: invoke, perform -- params, outcome
+*** Commands: Operations mapped To command-line execution
+**** +
+**** Op-invoke = command-line execution
+**** Op-perform = call to cmnd method of Cmnd class
+**** Op-params = Cmnd-params + Cmnd-args + Cmnd-Stdin_
+**** Op-Outcome = Cmnd-exitCode + Cmnd-Stdout + Cmnd-Err
+**** -
+*** Expectation Complete Commands: All expectations are specified of: Cmnd-params + Cmnd-args + Cmnd-Stdin
+**** +
+**** Cmnd-params: name, type, values, defaults, description
+**** Cmnd-params-applcability: ...
+**** -
+*** ICM: Interactive Command Modules: Collection Of Commands in an executable
+*** SCU: Service Commands Unit: An ICM that is intended to be used as a service
+*** SCMU: Service Commands Multi-Unit: A group of SCUs.
+*** Audited Invoke-Perform Execution of an ICM: AIPX at a given filePath
+**** +
+**** anyIcmp.py --insAsFPs=xxx --par1 -i cmnd arg1
+**** --
+**** aipx_icm --ipxBase=xxx --i invAtBase - anyIcm.py --par1 -i cmnd arg1 # no timeTags. base is ipxBase
+**** aipx_icm --ipxRoot=xxx -- anyIcm.py --par1 -i cmnd arg1 # creates a timeTag and passes timeTag as insAsFPs
+**** --
+**** aipx_icm --ipxBase=xxx -i perfAtBase # Gethers everything as fileParams.
+**** aipx_icm --ipxRoot=xxx -i perf # uses timeTags
+**** -
+*** Local Invoke-Perform Commands Services: LIPCS at a given Op Svc Multi-Unit AP (osmuAp)
+**** +
+**** Audit trail, plus equivalent of gipcs
+**** The difference between ipxBase and csmuAp is that ipxBase can be any path but csmuAp is pre-built
+**** scmuAp = Service Commands Multi-Unit Access Point
+**** scmuAp maps to a git-repo (or a Bpo-Repo)
+**** scmuAp has at its root: ./invs (invokations) ./state (for REST) ./files (root of FileSys) osmuSpec
+**** --
+**** lipcs_manage.py --bpoId=bpo --osmuAp=name -i create # creates osmupAP repos.
+**** lipcs_manage.py --csmuApPath=path -i create # creates osmupAP repos.
+**** --
+**** lipcs_manage.py --csmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
+**** lipcs_manage.py --csmuApPath=path -i perf # searches in ./invs/
+**** -
+*** Remote Git-Shell Invoke-Perform Commands Services: GIPCS at a given Remote Op Svc Multi-Unit AP (rosmuAp)
+**** +
+**** GIPCS-AU are git-shell accounts on containers through which git actions are executed
+**** rosmuAp = Remote Operations Service Multi-Unit Access Point
+**** rosmuAp maps to a git-shell-repo
+**** rosmuApAddress: consits of cntnrId+GIPCS-AuthUnit+invokerPubKey+rosmu-instance
+**** rosmuApAddress are created as repos within git-shell accounts
+**** rosmuAp has at its root: ./apAddr / ./invs  ./state ./files rosmuSpec
+**** --
+**** gipcs_manage.py --perfAddr=act@srvr --rosmuAp=name -i create # creates osmupAP repos.
+**** --
+**** gipcs_manage.py --rosmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
+**** gipcs_manage.py --rosmuApPath=path -i perf # searches in ./invs/
+**** -
+*** -
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "GIPCS Authentication Units (GIPCS-AU)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *GIPCS Authentication Units (GIPCS-AU):* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** GIPCS-AU are git-shell accounts on containers.
+** They are created on svcProvCntnrs to isolate invokations
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS-OAuth -- Open Authorization" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS-OAuth -- Open Authorization:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Built on OAuth2.
+** https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+**####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding t :fileName "./oauth2_abstract_flow.png" :comment "IMG:"  :afterComment "PNG"
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/panels/development/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][oauth2_abstract_flow.png]] || [[elisp:(find-file-other-window "/bisos/panels/development/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] *|*  =IMG:= *|*  PNG [[elisp:(org-shifttab)][<)]] E|
+   ####+END:
+** Refering to ./oauth2_abstract_flow.png  [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] :
+** User (Resource Owner): Maps to BxRealEntity. And An Authorization Email.
+** Authorization Server: Each BxRealEntity runs her own authorization server delivering Access Tokens.
+** Resource Server: Maps to a CntnrBpo. Each Bpo refers to its own BxRealEntity.
+** Application (Client): Maps to a GIPCS-Invoker.
+** Use Django -- It apears more mature for oauth in 2022
+** https://django-oauth-toolkit.readthedocs.io/en/latest/getting_started.html#what-we-will-build
+** https://oauthlib.readthedocs.io/en/latest/oauth2/server.html#protect-your-apis-using-scopes
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Addition Of pub-keys using BISOS-Oauth" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Addition Of pub-keys using BISOS-Oauth:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Limited access to a Granting-CntnrBpo is accomplished by adding the public-key of a Requesting-bpo.
+** For this to happen, the BxRealEntity should authorize it and the following steps occur:
+** 0) Granting-CntnrBpo (As A Resource Server) runs a GIPCS-pub-key-addition-Performer
+** 1) Requesting-bpo send an email to BxRealEntity as Authorization Request for pub-key addition
+** 2) BxRealEntity responds with AuthorizationGrant Email, notifies its Auth-Server
+** 3) Requesting-bpo Presents AuthorizationGrant to BxRealEntity Auth-Server
+** 4) BxRealEntity Auth-Server provides an Access-Token to Requesting-bpo
+** 5) Requesting-bpo provoides Access-Token and pub-key to Granting-CntnrBpo
+** 6) Granting-CntnrBpo adds the public key.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** [ 7811.226246] Lockdown: modprobe: unsigned module loading is restricted; see man kernel_lockdown.7
+**  sudo /sbin/vboxconfig
+** There were problems setting up VirtualBox.  To re-start the set-up process, run
+  /sbin/vboxconfig
+as root.  If your system is using EFI Secure Boot you may need to sign the
+kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
+them. Please see your Linux system's documentation for more information.
+**
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Storage" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Storage:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bootstrap/_nodeBase_/"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/_nodeBase_/")][@ ~bootstrap~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<bootstrap>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bootstrap/afterBaseSteps/"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bootstrap/afterBaseSteps/")][@ ~afterBaseSteps~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<afterBaseSteps>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/disks/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/disks/_nodeBase_")][@ ~disks~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<disks>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bxeAndBxo/_nodeBase_")][@ ~bxeAndBxo~ @]]  [[elisp:(org-cycle)][| *=* |]] :: /Agenda/ <<bxeAndBxo>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:bisos-dev
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

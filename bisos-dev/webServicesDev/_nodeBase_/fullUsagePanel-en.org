@@ -1,0 +1,304 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: bisos-dev/webServicesDev
+#+roam_tags: branch
+#+roam_key: panels/bisos-dev/webServicesDev
+[[roam:panels/bisos-dev]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
+**  This File :: *= /bisos/panels/bisos-dev/webServicesDev/_nodeBase_/fullUsagePanel-en.org =* 
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/bisos-dev -- webServicesDev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** Overview Comes Here.
+** B|
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Overview: =* | ]]   <<Xref->> |
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(org-tree-to-indirect-buffer)][|>]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(delete-other-windows)][|1]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] &&     [[elisp:(org-cycle)][| /= Model, Info and Pointers: =/ | ]]  |
+**  [[elisp:(org-cycle)][| ]]  Model and Info    ::  API Specification First Model/Philosophy/Practice [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :rawTitle t :title "_OpenApi LCNTs_" :anchor "openApiLcnts" :extraInfo "Related Docs"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _OpenApi LCNTs_: |]] <<openApiLcnts>> Related Docs  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "OpenApi Documents Evolution Plan" :anchor "openApiDocPlan" :extraInfo "Direction Statement, Plan, TODO List"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *OpenApi Documents Evolution Plan:* |]] <<openApiDocPlan>> Direction Statement, Plan, TODO List  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** 1) PLPC-180061: OpenAPI/Swagger Specification Based Strategies And Tools 
+**              For Development, Verification And Use Of Web Services
+** 
+** 1) PLPC-180061: OpenAPI Based Strategies And Tools 
+**              For Development, Verification And Use Of Web Services
+** 
+** 2)  http://www.by-star.net/PLPC/180057   -- RO-Verifier: A Remote-Operations Invocations And Verifications Framework
+** 
+** 3) PLPC-180050: ICM: An Expectations Complete Generalized Operations Specifications and Execution Framework
+**              Based on Unified Interactive Command Modules (ICM), Remote-Operations-ICMs and ICM-Players    
+** 
+** Previously PLPC-180050: Unified Interactive Command Modules (ICM) And ICM-Players -- To be Absorbed in New 180050
+** Previously PLPC-180056: Remote Operations Interactive Command Modules (RO-ICM) -- To be Absorbed in New 180050
+** PLPC-180058: Bash Interactive Command Modules (Bash-ICM)  -- To be kept separate fomr PLPC-180050 
+** 
+** 4) PLPC-180052: GOSSONoT: A Generalized Open-Source Self Organizing Network of Things Platform 
+**                     An ICMs Collection
+** 
+** B|
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180061" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180061: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/openApiStrategies")][dired]] || OpenAPI Based Strategies And Tools   
+~OpenAPI Based Strategies And Tools~
+~For Development, Verification And Use Of Web Services~
+~Based On RO-ICM And RO-Verifier Packages~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/openApiStrategies")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/openApiStrategies")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/openApiStrategies &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180061
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180057" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180057: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/wsTesting")][dired]] || RO-Invofier: A Remote-Operations Invocations And Verifications Framework   
+~RO-Invofier (RO-Invoker and RO-Verifier):~
+~A Remote-Operations Invocations And Verifications Framework~
+~Generalized OpenAPI/Swagger Based Tools For Use Of Web-Services~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/wsTesting")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/wsTesting")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/wsTesting &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180057
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180056" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180056: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/bxWebServices")][dired]] || RO-ICM: Best Current (2019) Practices For Web Services Development   
+~Remote Operations Interactive Command Modules (RO-ICM)~
+~Best Current (2019) Practices For Web Services Development~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/bxWebServices")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/bxWebServices")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/bxWebServices &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180056
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+** Presentation format only -- Revisit 
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180050" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180050: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/bxIcmAndPlayers")][dired]] || Unified Python Interactive Command Modules (ICM) and ICM-Players.   
+~Unified Python Interactive Command Modules (ICM) and ICM-Players~
+~A Framework For Development Of Expectations-Complete Direct Commands And Remote Operations~
+~A Model For GUI-Line User Experience~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/bxIcmAndPlayers")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/bxIcmAndPlayers")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/bxIcmAndPlayers &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180050
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180058" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180058: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/bashIcm")][dired]] || Bash Interactive Command Modules (Bash-ICM)   
+~Bash Interactive Command Modules (Bash-ICM)~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/bashIcm")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/bashIcm")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/bashIcm &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180058
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:mention-lcnt :outLevel 1 :sep t :lcnt-nu  "PLPC-180052" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| PLPC-180052: |]]  [[elisp:(dired-other-window "/lcnt/lgpc/bystar/permanent/engineering/gossonot")][dired]] || GOSSONoT: A Generalized Open-Source Self Organizing Network of Things Platform   
+~Extending SON To Clouds And Things~
+~GOSSONoT: A Generalized Open-Source Self Organizing Network of Things Platform~
+[[elisp:(find-file "/lcnt/lgpc/bystar/permanent/engineering/gossonot")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/engineering/gossonot")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/engineering/gossonot &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180052
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+* 
+* [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  *Python OAuth2 Provider*   :: [[file:/libre/ByStar/InitialTemplates/activeDocs/blee/bystarContinuum/djangoProc/fullUsagePanel-en.org][django dev panel]]
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= OpenApi -- Swagger Toolchain (codegen, UI, Editor): =* | ]]  |
+** 
+**      ICM               ::   [[elisp:(lsip-local-run-command "lcaSwaggerBinsPrep.sh")][lcaSwaggerBinsPrep.sh]]       [[elisp:(blee:visit-as-content-list "lcaSwaggerBinsPrep.sh")][Visit Content]]
+** 
+**  Git Base :: [[elisp:(find-file "/de/gits/com/github/anon")][/de/gits/com/github/anon]]  -- [[elisp:(find-file "gitDir-Notes.org")][gitDir-Notes.org]]
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  Swagger MainSites :: https://swagger.io/  https://github.com/swagger-api  |
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Swagger Tools Pointers Sources At Github: =/ | ]]  |
+*** 
+***  Swagger-Editor                   :: /de/gits/com/github/anon/swagger-editor
+***  Swagger-UI                       :: /de/gits/com/github/anon/swagger-ui
+***  Swagger-Verifier                 :: /de/gits/com/github/anon/validator-badge
+***  Code Generator                   :: [[elisp:(find-file "/de/gits/com/github/anon/swagger-codegen")][/de/gits/com/github/anon/swagger-codegen]]
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= BxSwagger Tools: =/ | ]]  |
+*** TODO Need a bash wrapper for the java .jar
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Python Swagger Performer (Server) Stack: =* | ]]  |
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Flask: =/ | ]]  |
+*** https://pypi.org/project/Flask/
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Connexion: =/ | ]]  |
+*** https://pypi.org/project/connexion/
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Swagger Generated Performer (Server) Code: =/ | ]]  |
+*** 
+***   [[elisp:(org-cycle)][| ]]        :: swagger-codegen-example-python/   :: Python3 + Flask, Performer Starting Point [[elisp:(org-cycle)][| ]]
+*** 
+** 
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Python Swagger Invoker (Client) Stack: =* | ]]  |
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Bravado -- Equivalent Of Swagger Generated Invoker (Client) Code: =/ | ]]  |
+*** https://pypi.org/project/bravado/
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Bravado + Click Command Line Invoker: =/ | ]]  |
+*** /de/gits/com/github/anon/openapi-cli-client/
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= unisos.icm -- Command Line Invokation Of API: =/ | ]]  |
+*** https://pypi.org/project/unisos.icm/
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= unisos.wsIcmInvoker -- Swagger Invokation From Command Line: =/ | ]]  |
+*** https://pypi.org/project/unisos.wsIcmInvoker
+**  B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Authonomous Cryptography" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Authonomous Cryptography:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Autonomous Primary Software Vault" :anchor "" :extraInfo ""
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Autonomous Primary Software Vault:/ |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+I would not use that approach. When you mount a USB drive, read a file from it, etc all sorts of copies of that data could end up in OS memory, logs, etc. You'll be fighting an uphill battle to make this secure, especially if the attacker has the ability to take memory dumps of the server, or plant malware on the server.
+
+A better approach would be to use some sort of USB hardware crypto module so that the server itself never needs to touch the private keys. The idea is that the cryptographic keys live on the crypto device and never leave it, you send the data you want to encrypt / decrypt to the device, it does the crypto operation for you and returns the results.
+
+With this approach you are guaranteed that no caches of the private key exist on the server because the server never touched it in the first place, and if you pull out the USB device, the server loses the ability to do crypto operations, which I think is which you want.
+
+Some technolgies / search terms you can look for include:
+
+    usb smartcard
+    cryptographic token
+    PKCS#11 token
+    TPM (trusted platform module)
+    HSM (hardware security module)
+
+You may want to look into hardware-based solutions like USB smart-cards, TPMs, or lightweight HSMs where the crypto is done on the device so that the server never actually touches the key.
+
+
+I Googled "usb pkcs11" and found this list of hardware devices, which could be a starting point: github.com/OpenSC/OpenSC/wiki/… 
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Autonomous Primary Software VM RO-Vault" :anchor "" :extraInfo "symCrypt Library: Symetric Encryption Facilities"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Autonomous Primary Software VM RO-Vault:/ |]]  symCrypt Library: Symetric Encryption Facilities  [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** 
+*** A VM image that is made to be very secure. 
+**** 
+**** Has a single user "root" only accessible on direct command line and is well passwd protected.
+**** On the network, it only provides a single RO-SAP
+**** Its network access is based on a small white list
+**** The generated private keys should never be removed from it
+**** You can create key pairs through RO.
+**** It signs, encrypts and decrypts based on priv key through RO
+**** 
+*** It usually shut down and unavailable.
+*** It is launched on demand, then used and then brought down
+*** Using RO-Vault other secondary keys in keyrings are obtained and those secondary keys are the ones that are used for specific purposes
+*** 
+*** IMPLEMENTATION PLAN
+**** 
+**** Create An ICM as the interface -- primRoVault.py
+**** Cmnds: Spawn, Shutdown, CreateKeyPair, Encrypt, Decrypt, Sign
+**** Use cryptKeyring in combination with primRoVault.py to obtain and maintain secondary keys.
+**** In this model, the existence of primRoVault is not known to others.
+**** https://pypi.org/project/keyrings.cryptfile/
+**** 
+*** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Unisos SymCrypt" :anchor "" :extraInfo "symCrypt Library: Symetric Encryption Facilities"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Unisos SymCrypt:/ |]]  symCrypt Library: Symetric Encryption Facilities  [[elisp:(org-shifttab)][<)]] E|
+####+END
+https://pypi.org/project/unisos.symCrypt/
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Unisos cryptKeyring" :anchor "" :extraInfo "cryptKeyring Library: Front-End Encryption Of Passwds In Keyring"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Unisos cryptKeyring:/ |]]  cryptKeyring Library: Front-End Encryption Of Passwds In Keyring  [[elisp:(org-shifttab)][<)]] E|
+####+END
+https://pypi.org/project/unisos.cryptKeyring/
+
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:org:indirectBufOther)][|>]] [[elisp:(bx:org:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Python Swagger Skeleton/Examples Starting Points: =* | ]]  |
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]    :: [[elisp:(lsip-local-run-command "+ /de/bx/nne/huawei/Sync/webSvcsPyExample")][+ /de/bx/nne/huawei/Sync/webSvcsPyExample]] |
+*** 
+***  [[elisp:(lsip-local-run-command "+ /de/bx/nne/huawei/Sync/webSvcsPyExample/operations")][+ operations]] ||  [[elisp:(lsip-local-run-command "+ /de/bx/nne/huawei/Sync/webSvcsPyExample/performer")][+ performer]]  ||  [[elisp:(lsip-local-run-command "+ /de/bx/nne/huawei/Sync/webSvcsPyExample/invoker")][+ invoker]]
+** 
+**  [[elisp:(org-cycle)][| ]]        :: swagger-codegen-example-python/   :: Python3 + Flask, Performer Starting Point [[elisp:(org-cycle)][| ]]
+** 
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= HTTP Monitoring And Analysis Tools: =* | ]]  |
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]    :: Postman  -- [[elisp:(lsip-local-run-command "ls -ldt /usr/local/bin/postman")][ls -ldt /usr/local/bin/postman]]
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]    :: Charles Proxy -- Logging Proxy (Located But Not Used)
+** 
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]    :: Turn On Debugging In requests lib
+** 
+* 
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Java Dropwizrd/Jetty/Jersey Model: =* | ]]  |
+** https://github.com/swagger-api/swagger-core/wiki/annotations-1.5.x#operation-declaration
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:webServicesDev
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
