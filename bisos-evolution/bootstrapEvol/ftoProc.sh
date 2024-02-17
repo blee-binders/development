@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/development/bisos-dev/bootstrapDev/ftoProc.sh
+*  /This File/ :: /bisos/panels/development/bisos-evolution/bootstrapEvol/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -58,6 +58,7 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
+siteRegistrars
 "
 # }}} DBLOCK-nodesList
 ####+END:

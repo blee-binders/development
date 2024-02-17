@@ -32,9 +32,15 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-* 
+** +
 ** Describe the steps.
 ** B|
+* +
+* TODO  make cntntDevel,sh central
+* TODO HERE: bisosPyVenvSetup.sh -h -v -n showRun -i pyVenv_DevSetup # Create Virtual Environment and dev pipInstalls
+* TODO document  gitLabel somwhere  bx-gitReposBases -v 20 --baseDir="/bisos/git/auth/bxRepos" --pbdName="bxReposRoot" --vcMode="auth" --gitLabel="mb1_github"  -i pbdUpdate all
+* What is below is too low level
+* -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Activate BISOS Development BxO" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Activate-BISOS Development BxO:* |]]    [[elisp:(org-shifttab)][<)]] E|

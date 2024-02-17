@@ -1,8 +1,8 @@
 * B|
 ####+BEGIN: bxPanel:common/title-plus
-#+title: development/bisos-dev
+#+title: development/bisos-evolution
 #+roam_tags: branch
-#+roam_key: panels/development/bisos-dev
+#+roam_key: panels/development/bisos-evolution
 [[roam:panels/development]]
 ####+END
 # kind of begin
@@ -18,8 +18,8 @@
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
 **  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/development/bisos-dev/_nodeBase_/fullUsagePanel-en.org =*
-* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/development/bisos-dev/_nodeBase_/fullUsagePanel-en.org
+**  This File :: *= /bisos/panels/development/bisos-evolution/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/development/bisos-evolution/_nodeBase_/fullUsagePanel-en.org
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
@@ -27,13 +27,13 @@
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
 * [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/development -- bisos-dev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: panels/development -- bisos-evolution~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-evolution/bashEvol/_nodeBase_")][ =bashEvol= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-evolution/bootstrapEvol/_nodeBase_")][ =bootstrapEvol= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-evolution/pyCsFwrk-evol/_nodeBase_")][ =pyCsFwrk-evol= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-evolution/_nodeBase_")][ =bisos-evolution= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-evolution/_nodeBase_")][ =blee-evolution= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
@@ -73,7 +73,7 @@
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementatinon And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 #+caption: Development Table
 | [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                 |
@@ -935,7 +935,7 @@ and Security Engineers to collaborate towards standardizition
 ** https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
 **####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding t :fileName "./oauth2_abstract_flow.png" :comment "IMG:"  :afterComment "PNG"
 ** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/panels/development/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][oauth2_abstract_flow.png]] || [[elisp:(find-file-other-window "/bisos/panels/development/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] *|*  =IMG:= *|*  PNG [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bisos/panels/development/bisos-evolution/_nodeBase_/oauth2_abstract_flow.png")][oauth2_abstract_flow.png]] || [[elisp:(find-file-other-window "/bisos/panels/development/bisos-evolution/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] *|*  =IMG:= *|*  PNG [[elisp:(org-shifttab)][<)]] E|
    ####+END:
 ** Refering to ./oauth2_abstract_flow.png  [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] :
 ** User (Resource Owner): Maps to BxRealEntity. And An Authorization Email.
@@ -1027,7 +1027,7 @@ them. Please see your Linux system's documentation for more information.
 #+STARTUP: inlineimages
 #+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
 #+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
-#+CATEGORY: N:bisos-dev
+#+CATEGORY: N:bisos-evolution
 
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"

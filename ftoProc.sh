@@ -57,8 +57,10 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+bisos-evolution
 _nodeBase_
 bxde-dev
+blee-evolution
 blee-dev
 bisos-dev
 "

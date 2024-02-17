@@ -24,8 +24,7 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
-* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
-
+* +
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/blee-dev/developmentRoadmap")][developmentRoadmap]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/blee-dev/developmentRoadmap")][developmentRoadmap]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
@@ -311,7 +310,7 @@ closeParam is one of:
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "startOrgPanel.sh"  :results t :comment "ICM Description" :afterComment "-- tailor the command line"
 *** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "startOrgPanel.sh")][startOrgPanel.sh]] *|*  =ICM Description= *|*  -- tailor the command line  |
-Last Executed at: 202401-04-23:44:21  by: bystar on: PML-1006.intra
+Last Executed at: 202401-20-21:16:35  by: bystar on: PML-1006.intra
 ----------------------------
 #################  COMMON SEEDED EXAMPLES  #################
 startOrgPanel.sh -i examplesCommonSeeded
@@ -338,7 +337,7 @@ startOrgPanel.sh -h -v -n showRun -i bleePanelBaseUpdate .
 ####+END
 ####+BEGIN: blee:bxPanel:runResult :outLevel 3  :command "startOrgPanel.sh"  :results t :comment "ICM Description" :afterComment "-- tailor the command line"
 *** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "startOrgPanel.sh")][startOrgPanel.sh]] *|*  =ICM Description= *|*  -- tailor the command line  |
-Last Executed at: 202401-04-23:44:21  by: bystar on: PML-1006.intra
+Last Executed at: 202401-20-21:16:35  by: bystar on: PML-1006.intra
 ----------------------------
 #################  COMMON SEEDED EXAMPLES  #################
 startOrgPanel.sh -i examplesCommonSeeded
