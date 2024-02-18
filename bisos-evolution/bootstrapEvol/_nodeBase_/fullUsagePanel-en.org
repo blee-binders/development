@@ -61,6 +61,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Debian 12 Updates:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** /bisos/core/bsip/bin/siteNetworks_lib.sh: line 121: abodeInitial: unbound variable
 ** TODO  Rename csInvSiteRegContainer.cs  to svcInvSiteRegContainer.cs
 ** TODO Version number for bagrant buildbox. No version detected for bxDistro/debian-12.4.0/desktop,
 using timestamp to watch for modifications.
