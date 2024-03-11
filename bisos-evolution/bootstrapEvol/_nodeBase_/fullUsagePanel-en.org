@@ -61,9 +61,36 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Debian 12 Updates:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** 1) Blee Cleanups And Fixes 1-Day
+*- Add nerd fonts as a module
+**- To doom-install add --fonts so that we get nerd-fonts
+**- CLeanup blee script
+**- Clean up doom script
+**- Rebuild from scratch as vm for testing
+** 2) Cleanup and capture all of scs (below) -- 2 Days
+- Registrars in an scs BPO   --- Top Priority
+- DNS servers  -- Update in documentation
+- DHCP Servers
+- NAT scs BPO
+- Router scs BPO
+- Wifi Bridge
+- Hosts inner-rim vs Hosts Exposed rim
+- Host network manual
+     iface eth0 inet manual
+      pre-up ifconfig $IFACE up
+      post-down ifconfig $IFACE down
+** 3) Write up new book chapters -- 3 Days
+** 4) Decommission old plone computers based on PALS -- 3 Days
+** 5) Revive qmail and decomission 198.166 -- 6 Days
+** 6) Start distributing announcements
+** 7) Gitlab as an scs -- 2 Days
+** TODO Outgoing Mail Problem -- 2024-01-08 12:16:26.387194500 delivery 3: failure: 142.251.16.26_failed_after_I_sent_the_message./Remote_host_said:_550-5.7.26_This_mail_has_been_blocked_because_the_sender_is_unauthenticated./550-5.7.26_Gmail_requires_all_senders_to_authenticate_with_either_SPF_or_DKIM./550-5.7.26_/550-5.7.26__Authentication_results:/550-5.7.26__DKIM_=_did_not_pass/550-5.7.26__SPF_[mohsen.1.banan.byname.net]_with_ip:_[]_=_did_not/550-5.7.26_pass/550-5.7.26_/550-5.7.26__For_instructions_on_setting_up_authentication,_go_to/550_5.7.26__https://support.google.com/mail/answer/81126#authentication_w22-20020a05620a445600b007832c73cd1bsi146157qkp.416_-_gsmtp/
+** TODO Cpature sudo ip addr flush dev eth2 -- needed by ifup -a 
+** TODO privA in guests should not inclue 220 as gw
+** TODO Repasswd vagrant
 ** /bisos/core/bsip/bin/siteNetworks_lib.sh: line 121: abodeInitial: unbound variable
 ** TODO  Rename csInvSiteRegContainer.cs  to svcInvSiteRegContainer.cs
-** TODO Version number for bagrant buildbox. No version detected for bxDistro/debian-12.4.0/desktop,
+** TODO Version number for vagrant buildbox. No version detected for bxDistro/debian-12.4.0/desktop,
 using timestamp to watch for modifications.
 ==> VAG-deb12_-4: No version detected for bxDistro/debian-12.4.0/desktop, using timestamp to watch for modifications. Consider
 ==> VAG-deb12_-4: generating a local metadata for the box with a version to allow better handling.
