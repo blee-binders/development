@@ -41,7 +41,12 @@
 ** [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][||F]] [[elisp:(blee:menu-sel:navigation:popupMenu)][||M]] &&     [[elisp:(org-cycle)][| /= Model, Info and Pointers: =/ | ]]  |
 **  [[elisp:(org-cycle)][| ]]  Adopted Policies, Procedure and Tools For BISOS Python Development [[elisp:(org-cycle)][| ]]
 ** 
-* 
+* +
+* TODO warnings.warn(msg, SetuptoolsDeprecationWarning)
+SCHEDULED: <2024-02-23 Fri>
+* Fixes Warnings in 3.11 -- https://packaging.python.org/en/latest/guides/packaging-namespace-packages/
+SCHEDULED: <2024-02-23 Fri>
+* -
 * [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| *= Policies And Adopted Tools (Python 2.7 to 3.x Transition): =* | ]]  |
 ** 
 ** [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /= PyPi Public Usage And Develpment: =/ | ]]  |

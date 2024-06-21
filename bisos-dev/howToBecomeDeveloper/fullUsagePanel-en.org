@@ -36,7 +36,7 @@
 ** Describe the steps.
 ** B|
 * +
-* TODO  make cntntDevel,sh central
+* TODO  make cntnrDevel.sh central
 * TODO HERE: bisosPyVenvSetup.sh -h -v -n showRun -i pyVenv_DevSetup # Create Virtual Environment and dev pipInstalls
 * TODO document  gitLabel somwhere  bx-gitReposBases -v 20 --baseDir="/bisos/git/auth/bxRepos" --pbdName="bxReposRoot" --vcMode="auth" --gitLabel="mb1_github"  -i pbdUpdate all
 * What is below is too low level

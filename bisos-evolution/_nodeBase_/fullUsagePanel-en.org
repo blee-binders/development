@@ -71,6 +71,37 @@
 **
 ** Development Agenda and plans.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deb12 Known Bugs" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Deb12 Known Bugs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Absorb  https://github.com/jsynacek/emacs-virt-manager
+** TODO [#A] Missing Python Packages: pykeepass-cache, gnupg, libvirt-python, google-api-client-python
+** TODO [#A] Missing Python Packages: google-auth-oauthlib
+** TODO [#A] capture pip install of get_pypi_latest_version --  https://pypi.org/project/get-pypi-latest-version/
+** TODO [#A] capture pip install pygit2 graphviz
+** DONE pip install rpyc, Add as dependency to bisos.b and test
+** DONE Missing git clone -- git@mb1_github:blee-pip/csPlayer.git
+** WAITING Missing  pypiProc.sh -v -n showRun -i pkgInstall edit /bisos/venv/py3/dev-bisos3  # pip install --editable /bisos/git/auth/bxRepos/blee-pip/csPlayer/py3
+** DONE bisos.currents setup had a bad pointer to binary.
+** DONE bisos.banna is missing
+** DONE bisos.banna is inconsistent. Instead of svcSiteRegistrars, it is csSiteRegistrars
+** TODO Requires availability of piu_mbFullUsage svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
+** DONE bpoActivate.sh -h -v -n showRun -p privacy="priv" -p bpoId="piu_mbFullUsage" -i bpoActivate
+** DONE usgBpos.sh -h -v -n showRun -i usgBpos_usageEnvs_fullUse_update piu_mbFullUsage # Main Entry -- Sets
+** TODO svcInvSiteRegBox.cs --regBoxPerfAddrs="['192.168.0.90']"  -i invSiteRegBoxConf_set
+** TODO svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
+** TODO svcInvSiteRegBox.cs  -i thisBox_findNu
+** ========== META Longer Term ==========
+** TODO In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
+** TODO In siteRegistrar, pass fsbo_envRun to performer, Merge marmee's runEnv and sysd with siteRegistrar
+** TODO Splitup /bisos/core/bsip and bpip into below --- Turn below into a table in some Panel
+** /bisos/core/unsited/bin -- /bisos/core/sited/bin -- /bisos/core/materialized/bin -- /bisos/core/stationed/bin
+** /bisos/core/maybe/bin -- gitsh
+** /bisos/core/usage  -- other than lcnt and mail usage facilities
+** /bisos/core/asc  -- Adopted Service Component
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
