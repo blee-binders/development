@@ -138,7 +138,8 @@ subtree is chown and hidden. And add outline-show-subtree to +- menu.
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Panel Facilities:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
+** TODO [#A] For panels add the concept of links from other panels. Have some fv control for blee:bxPanel:terseTreeNavigator
 ** TODO Use /bisos/blee/nativePkgs/org-img-link/org-img-link as example to create [[bxPlanel-linkto:xx]] etc
    SCHEDULED: <2020-08-18 Tue>
 ** TODO Revisit foldingSections so that they are sectioning and folding is an option

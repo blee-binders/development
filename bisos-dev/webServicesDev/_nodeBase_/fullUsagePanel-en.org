@@ -24,7 +24,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/development/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END

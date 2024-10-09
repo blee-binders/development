@@ -553,7 +553,6 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO Create a bisos.systemd manager package --- https://github.com/torfsen/python-systemd-tutorial
 ** TODO Add to presentation \usepackage{qrcode}  %%% Must come after beamerarticle
 ** TODO pandoc should be brought over at some point in one of the binspreps.
 ** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html

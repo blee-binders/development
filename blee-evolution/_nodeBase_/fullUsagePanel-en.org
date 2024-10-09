@@ -37,6 +37,7 @@
 ** Overview Comes Here.
 ** B|
 * +
+* Capture in Blee   https://github.com/bbatsov/prelude
 * Void function org-file-name-concat -- Get the org package not from internal
 If you encounter an issue about org-file-name-concat being a void function and if it is related to org-persist with the cache, it means that it is the org-mode builtin to emacs that is used instead of the official one. To fix this, add the following to your init.el
 
