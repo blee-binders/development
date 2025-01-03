@@ -37,7 +37,7 @@
 ** Overview Comes Here.
 ** B|
 * +
-* Capture in Blee   https://github.com/bbatsov/prelude
+* Capture in Blee   https://github.com/bbatsov/prelude or perhaps NOT (Stick with Doom)
 * Void function org-file-name-concat -- Get the org package not from internal
 If you encounter an issue about org-file-name-concat being a void function and if it is related to org-persist with the cache, it means that it is the org-mode builtin to emacs that is used instead of the official one. To fix this, add the following to your init.el
 
@@ -57,6 +57,21 @@ If you encounter an issue about org-file-name-concat being a void function and i
 (straight-use-package 'use-package)
 (straight-use-package 'org)
 (package-initialize)
+* bring in treemacs
+* Bring in lsp-treemacs
+* Bring in ellsp -- lsp for elisp
+* Bring in server side lsp for latex
+* Rename COMEEGA to COMEEGA-langs
+* Create LSP-langs Panel next to COMEEGA-langs -- Same set of sub-panels in both
+* Capture concept of lsp-workspace -- https://github.com/emacs-lsp/lsp-mode/discussions/3095
+So workspace in Emacs means server connection in VScode.
+A Session is a collection of folders and a server-connection.
+Server-connections are per language abstractions. One for python, one for latex
+Multi-root workspaces map to one server connection managing multiple folders.
+
+Usually you have one multi-root connection managing all project of one type(e. g. JDTLS will manage all java
+projects). Server that does not support multi-root will run one per project(workspace folder).
+
 * -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
