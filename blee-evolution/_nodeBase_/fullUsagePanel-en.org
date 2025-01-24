@@ -72,7 +72,34 @@ Multi-root workspaces map to one server connection managing multiple folders.
 Usually you have one multi-root connection managing all project of one type(e. g. JDTLS will manage all java
 projects). Server that does not support multi-root will run one per project(workspace folder).
 
+* TODO Blee Bug -- yasnipts does not include user snippets
+* TODO Capture ripgrep rg and p:search --- See Emacs Conf 2024 Video
+* TODO Absorb https://github.com/szermatt/emacs-bash-completion?tab=readme-ov-file
+* WAITING [#B] Cleanup lceEmacsSrcBinsPrep.sh for the latest -- Once a working set, pin it
+* WAITING [#B] Cleanup blee and created dirs -- Test out with 29, 30 and latest
+* In At Point Url, Make Chrome be default
+* TODO [#B] BUG -- blee-29 some Sub menus for blee  do not appear
+* *TODO Capture https://github.com/karthink/gptel?tab=readme-ov-file#i-want-the-window-to-scroll-automatically-as-the-response-is-inserted
+* TODO Capture https://systemcrafters.net/advanced-package-management/using-straight-el
+* https://github.com/freckletonj/uniteai   LLM through LSP
 * -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Poly-Dblocks" :anchor "" :extraInfo "Evolution"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Poly-Dblocks:* |]]  Evolution  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Think of dblocks-lib.el as poly-dblocks package.
+** TODO Modify begin and end re to be just one #, or just one % or just one ;
+** TODO Modify F7-d-d  to reset the begin and end re to current major mode
+** TODO Modify F7-d-d  when in org-mode check for buffer local comeega-mode-main if it is set to other than org do nothing.
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "COMEEGA-Toggle" :anchor "" :extraInfo "Evolution"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *COMEEGA-Toggle:* |]]  Evolution  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Upon Mode Entry, set local comeega-mode-main
+** -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
