@@ -50,13 +50,6 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 * +
-* graphviz binsprep somewhere
-* TODO [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
-* TODO [#A] Add to bisos.crypt --  pip install python-gnupg -- ModuleNotFoundError: No module named 'gnupg'
-* TODO [#A] pip install google-api-python-client  ModuleNotFoundError: No module named 'googleapiclient'
-* TODO [#A] pip install google-auth-oauthlib -- ModuleNotFoundError: No module named 'google_auth_oauthlib'
-* TODO [#A]  pip install python-magic -- ModuleNotFoundError: No module named 'magic' -- /bisos/git/bxRepos/bisos-pip/qmail/py3/bin
-* TODO [#B] https://reintech.io/blog/installing-configuring-nextcloud-debian-12   -- Installing <<NextCloud>> on Deb12
 * constraints liberate liberties constrain -- https://www.youtube.com/watch?v=GqmsQeSzMdw
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deb12 Known Bugs" :anchor "" :extraInfo ""
@@ -97,8 +90,8 @@
 |          |            |            | tion  |         |                                                     |
 |----------+------------+------------+-------+---------+-----------------------------------------------------|
 | [[Phase-1]]  | 2025-01-12 | 2025-01-19 | 1 wks | Started | bisos.capability for facter and registrar           |
-| [[Phase-2]]  | 2025-01-19 | ---        | 1 wks | Planned | Cleanup: Fully eliminate icm&unisos Regression test |
-| [[Phase-3]]  |            |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs      |
+| [[Phase-2]]  | 2025-01-19 | 2025-01-26 | 1 wks | Planned | Cleanup: Most;y eliminate icm&unisos Regression test |
+| [[Phase-3]]  | 2025-01-26 |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs      |
 | [[Phase-4]]  |            |            | 2 wks | Planned | PBS and PALS and DNS for geneweb                    |
 | [[Phase-5]]  |            |            | 3 wks | Planned | Qmail, PBS, PALS, DNS                               |
 | [[Phase-6]]  |            |            | 1 wks | Planned | CMDB for site and Libre-Center                      |
@@ -115,6 +108,56 @@
 
 
 ** +
+** <<Phase-2>> Next Steps
+*** +
+*** DONE IMPORTANT VERIFY: In sysIdentity set run platformBasesUpdate.cs --PROBLEM. Look at the logfiles
+*** sudo -u bisos /bisos/venv/py3/bisos3/bin/pip3 install --no-cache-dir --force-reinstall --upgrade bisos.py3-all
+*** --------------  January 19, 2025 Start Date ---------------
+*** TODO Update to latest setuputils
+*** TODO Add Concept of Capability Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
+*** TODO Add Concept of Capability Phase -- In Cap Specification The above means earliest phase.
+*** TODO Add FreshDebianCaps as a Phase in vagrant file with  [[MiniBisos]]  and [[Cap:bisos.facter]]
+*** TODO Capture concept of Bx Objects - BPOs, BxRepoObjects (BRO), BxStaticObjects (BSO), BxForeignObjects(BFOs)
+*** TODO Starting point for bisos.sbom --- Mimic what straight.el keywords are -- Start with doom, git/extPkgs
+*** TODO Starting point for bisos.sbom --- <<MiniBisos>>
+*** TODO Add new pip packages using binsPrep. All that is needed for <<Cap:bisos.facter>>
+*** DONE Add title to VM during Materialization
+*** --------------- MISC
+*** TODO Add apt-get symlinks
+*** TODO /bisos/git/auth/bxRepos/blee/mtdt-distribution/  -- has mohsen specific stuff
+*** ----------------  LLM
+*** ---------------
+*** --------------  January 26, 2025 Start Date ---------------
+*** -
+** <<CleanUps>> Clean Ups Planning
+*** +
+*** TODO in pip install editable, get rid of warning
+*** ------------
+*** TODO Convert fileTreeManage.py of unisos to fileTreeManage.cs
+*** ---
+*** TODO Convert and test py2cs for cryptKeyring now in bisos.crypt
+*** TODO Convert and test py2cs for symCrypt now in bisos.crypt
+*** ---
+*** TODO Move from unisos to bisos gcipher
+*** TODO Move from unisos to bisos githubApi
+*** ---
+*** Delete x822, examples etc and test full builds
+*** ---
+*** TODO Delete ALL-OF  unisos-pip organization
+*** -------------
+*** TODO Move blee unisos.csPlayer to bisos.blee
+*** TODO Compate unisos.icmPlayer with unisos.csPlayer
+*** TODO Convert all uses of  unisos.csPlayer to bisos.blee.csPlayer
+*** TODO Delete ALL-OF  bisos-pip organization
+*** -------------
+*** TODO Absorb or delete /bisos/git/bxRepos/roPerf-pip
+*** TODO Delete ALL-OF  roPerf-pip organization
+*** ------------
+*** TODO In bisos-pip Convert mmwsIcm from unisos to bisos
+*** TODO Get rid of obsoleted repos
+*** TODO Fully get rid of unisos and icm everywhere in bisos-pip
+*** -----------
+*** -
 ** <<Phase-1>> Next Steps
 *** +
 *** --------------  January 12, 2025 Start Date ---------------
@@ -134,25 +177,6 @@
 *** TODO Use all of above in Fresh VM to Station site registrar
 *** --------------  January 19, 2025 End Date ---------------
 *** -
-** <<Phase-2>> Next Steps
-*** +
-*** --------------  January 19, 2025 Start Date ---------------
-*** TODO Update to latest setuputils
-*** TODO Add Concept of Capability Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
-*** TODO Add FreshDebianCaps as a Phase in vagrant file with  [[MiniBisos]]  and [[Cap:bisos.facter]]
-*** TODO Capture concept of Bx Objects - BPOs, BxRepoObjects (BRO), BxInputObjects (BIO), BxForeignObjects(BFOs)
-*** TODO Starting point for bisos.sbom --- Mimic what straight.el keywords are -- Start with doom, git/extPkgs
-*** TODO Starting point for bisos.sbom --- <<MiniBisos>>
-*** TODO Add new pip packages using binsPrep. All that is needed for <<Cap:bisos.facter>>
-*** TODO Add apt-get symlinks
-*** ----------------  MML
-*** TODO MML Integration in Blee:: https://github.com/karthink/gptel?tab=readme-ov-file  https://github.com/freckletonj/uniteai
-*** TODO MML Integration in Blee:: https://github.com/copilot-emacs/copilot.el https://github.com/alan-w-255/tabby.el?tab=readme-ov-file
-*** TODO MML Integration in Blee:: Create a Panel for Blee MML
-*** -----------------
-*** --------------  January 26, 2025 Start Date ---------------
-*** -
-*
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs, Problems And Next Steps" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -189,15 +213,7 @@ iface swp1
 ** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
 ** TODO in sysCharGuest, git rid of testNet
 ** TODO IMPORTANT sysCharDevel.sh prompts for github confirmation -- cant be automated run
-** TODO IMPORTANT Absorb autostart in /bisos/bsip/bin/hostVirshManage.sh
-sudo systemctl stop libvirt-guests   # stops VMs
-sudo systemctl restart libvirtd      # starts VMs agains
-sudo virsh net-autostart --network vagrant-libvirt
-sudo virsh net-start --network vagrant-libvirt
-sudo virsh net-autostart --network default
-sudo virsh net-start --network default
-sudo virsh net-list --all
-** sysCharRealize problem --   parName=distro  is not set 
+** sysCharRealize problem --   parName=distro  is not set
     VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distro -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,331
     VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distroType -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,429
 ** TODO pubB and pubB-control should exist but be unassigned
@@ -218,7 +234,7 @@ sudo virsh net-list --all
 ** TODO /bisos/bsip/bin/bxoPubGithubManage.sh git clone should depend on dev and perhaps use github auth
 ** TODO onSysInvokation only. Some functions should only run on thisSys and not on otherwise.
 ** TODO In sysEssentialsBinsPrep.sh also get gparted.
-** WAITING Disable auto suspend on Deb11 --- Needs Testing
+** WAITING Disable auto suspend on Deb11 --- Needs Testing --- Capture this as a Capability
 *** sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 *** Do not autosuspend  -- details 
 # - Do not autosuspend
@@ -238,8 +254,6 @@ git config --global pull.rebase false
 ** TODO better -- startOrgPanel.sh -i examples | shIcmToEml | bleeclient.sh -i emlFrame
 ** TODO better -- startOrgPanel.sh -i examples | pyIcmToEml | bleeclient.sh -i emlFrame
 ** TODO more better: shIcmPlayer startOrgPanel.sh  -- pyIcmPlayer example.py
-** TODO Add panels search bottons -- find|grep for panelNames, findXargs, org-recoll search engines
-   SCHEDULED: <2021-01-27 Wed>
 ** TODO Add all folders from /bisos/core of /bisos/panels/bisos-core/baseDirs/bisosBaseDirs/fullUsagePanel-en.org
    SCHEDULED: <2021-01-24 Sun>
 ** TODO Add bx:bsip:bash/libLoadOnce to libraries -- Test single inclusions.
@@ -250,24 +264,164 @@ git config --global pull.rebase false
 ** TODO Make sure pip2 install bisos.currents is included
 ** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Planned Features" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "STABLE"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  STABLE  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS To Be Captured" :extraInfo "_PyCS Framework_ Misc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS To Be Captured:* |]]  _PyCS Framework_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Use Django https://github.com/viewflow/viewflow
-** Replace .ttytex with .mtx  --- Main/Master TeX module.
-** Use gRPC -- Not OpenAPI, REST, etc.
-** https://github.com/tomyjwu/python-microsrvices-with-grpc
-** https://realpython.com/python-microservices-grpc/
-** https://github.com/ruan65/Python-Microservices-With-gRPC
-** Static Site Generators -- 2025 Selected Hugo --  Selected Jekyll -- Considered: Grow, ikiwiki, Hugo, Jekyll
-** Default daemonized emacs/blee server for remote ssh
-*** 
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS To Be Captured" :extraInfo "_BISOS_ Misc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS To Be Captured:* |]]  _BISOS_ Misc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** graphviz binsprep somewhere
+** TODO [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
+** TODO [#A] Add to bisos.crypt --  pip install python-gnupg -- ModuleNotFoundError: No module named 'gnupg'
+** TODO [#A] pip install google-api-python-client  ModuleNotFoundError: No module named 'googleapiclient'
+** TODO [#A] pip install google-auth-oauthlib -- ModuleNotFoundError: No module named 'google_auth_oauthlib'
+** TODO [#A]  pip install python-magic -- ModuleNotFoundError: No module named 'magic' --
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee To Be Captured" :extraInfo "_Blee_ Misc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee To Be Captured:* |]]  _Blee_ Misc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** (require 'autoload) to fix https://github.com/doomemacs/doomemacs/issues/8251
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "STABLE"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  STABLE  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Framework New Planned Features" :extraInfo "_PyCS Framework_ Development Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Framework New Planned Features:* |]]  _PyCS Framework_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Add gRPC as a service model of PyCS -- Similar to RPYC
+*** +
+*** Use gRPC -- Not OpenAPI, REST, etc.
+*** https://github.com/tomyjwu/python-microsrvices-with-grpc
+*** https://realpython.com/python-microservices-grpc/
+*** https://github.com/ruan65/Python-Microservices-With-gRPC
+*** -
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS New Planned Features" :extraInfo "_BISOS_ Development Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS New Planned Features:* |]]  _BISOS_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** WAITING Create bisos-pip/capSpecs --- emacs30, lcnt -- develMode
+** WAITING Create bisos-pip/virsh/virshBpo --- Absorb bpoContainerStation.sh into bpoPlatformStation.cs
+*** +
+*** Use python-virsh
+*** TODO IMPORTANT Absorb autostart in /bisos/bsip/bin/hostVirshManage.sh
+sudo systemctl stop libvirt-guests   # stops VMs
+sudo systemctl restart libvirtd      # starts VMs agains
+sudo virsh net-autostart --network vagrant-libvirt
+sudo virsh net-start --network vagrant-libvirt
+sudo virsh net-autostart --network default
+sudo virsh net-start --network default
+sudo virsh net-list --all
+*** Get IpAddr for VmName Using virsh --connect qemu+ssh://localhost/system net-dhcp-leases vagrant-libvirt
+*** Get IpAddr for VmName Using virsh --connect qemu:///system domifaddr bxoVAG-deb12_-P3-54
+*** NO PassWord NEEDED when Using virsh --connect qemu:///system  net-dhcp-leases vagrant-libvirt
+*** -
+** WAITING Create bisos-pip/sbom  --- Software bill of material
+*** +
+*** Move binsprep to bisos-pip/sbom
+*** Add seed for git cloning similar to straight.el
+*** Add seed for directory creation
+*** Add seed for file creation
+*** -
+** WAITING Create bisos-pip/stub -- Develop it using bisos.sbom
+** In RawBisos add rawBisosPlatform in /bisos/admin/bso/ --- Create panel --- Symlink to from /bisos/platform
+** Adopt <<OLLAMA>> -- Start with /bisos/core/bsip/bin/lcaOllamaBinsPrep.sh -- inconjusction with Blee [[GPTEL]]
+** Hugo Static Site Generators To Be Added As PALS
+*** +
+*** Static Site Generators -- 2025 Selected Hugo --  Previously had Selected Jekyll -- Considered: Grow, ikiwiki, Hugo, Jekyll
+*** -
+** Add Django as PALS of PBS
+*** +
+*** Use Django https://github.com/viewflow/viewflow
+*** -
+** LCNT Improvements
+*** +
+*** Replace .ttytex with .mtx  --- Main/Master TeX module.
+*** -
+** Verifed Re-Materialization
+*** +
+*** For each capability have a Re-Materialization Verifier
+*** At completoin of Materialization start the vm-domain
+*** Obtain IP-addr for vm-domain. Use ipAddr to verify the running rematerialized
+*** For facter -- run facter-ro-Inv against running rematerialized
+*** Nightly run rematerialization and verifiers for capabilities
+*** -
+** Adopt Github API -- Build on /bisos/git/auth/bxRepos/bisos/bsip4/bin/gh-binsPrep.cs
+** Adopt NextCloud  https://reintech.io/blog/installing-configuring-nextcloud-debian-12
+** Adopt Qmail -- /bisos/git/bxRepos/bisos-pip/qmail/py3/bin
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee New Planned Features" :extraInfo "_Blee_ Development Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee New Planned Features:* |]]  _Blee_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Adopt <<GPTEL>> --In combination with [[OLLAMA]]
+*** +
+*** Integration in Blee:: https://github.com/karthink/gptel?tab=readme-ov-file
+*** https://github.com/freckletonj/uniteai
+*** LLM in Blee:: https://github.com/copilot-emacs/copilot.el
+*** https://github.com/alan-w-255/tabby.el?tab=readme-ov-file
+*** Integration in Blee:: Create a Panel for LLM and Blee
+*** -
+** Exportable Blee Panels
+*** +
+*** Convert fullUsagePanel-en.org Panels to an org-mode as and html exportable
+*** Re-do the dblock expanssions
+*** Git rid of dblock expansions
+*** -
+** Emacs Server -- To be EVALUATED
+*** +
 *** Figure the problem with sysCharRealize.sh step when ssh-ed into target
 *** Look into emacs server selection as a daemon -- https://www.emacswiki.org/emacs/EmacsAsDaemon
 *** Look into emacs server selection as a daemon -- https://www.emacswiki.org/emacs/MultiEmacsServer
-*** B|
+*** -
+** Add Search feature to Panels.
+*** +
+***  TODO Add panels search bottons -- find|grep for panelNames, findXargs, org-recoll search engines
+   SCHEDULED: <2021-01-27 Wed>
+*** -
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "NEXT GENERATION"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  NEXT GENERATION  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Next Generation Plans" :extraInfo "_PyCS_ Next Generation  Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/qqq
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Next Generation Plans:* |]]  _PyCS_ Next Generation  Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS Next Generation Plans" :extraInfo "_BISOS_ Next Generation  Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS Next Generation Plans:* |]]  _BISOS_ Next Generation  Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Static Platform/Site/Usage Objects   file:/bisos/admin/bso/README.org
+** /bisos/gatherer should be renamed as  /bisos/realms
+** Should /bisos/control be obsoleted ? -- in favor of /bisos/platform , /bisos/site and /bisos/var 
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee Next Generation Plans" :extraInfo "_Blee_ Next Generation  Plans"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee Next Generation Plans:* |]]  _Blee_ Next Generation  Plans  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -
+
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
