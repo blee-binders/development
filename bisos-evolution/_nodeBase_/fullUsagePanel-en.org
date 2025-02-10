@@ -58,20 +58,12 @@
 ####+END
 ** +
 ** TODO Absorb  https://github.com/jsynacek/emacs-virt-manager
-** TODO [#A] Missing Python Packages: pykeepass-cache, gnupg, libvirt-python, google-api-client-python
-** TODO [#A] Missing Python Packages: google-auth-oauthlib  google-api-python-client
-** TODO [#A] capture pip install of get_pypi_latest_version --  https://pypi.org/project/get-pypi-latest-version/
-** TODO [#A] capture pip install pygit2 graphviz
-** WAITING Missing  pypiProc.sh -v -n showRun -i pkgInstall edit /bisos/venv/py3/dev-bisos3  # pip install --editable /bisos/git/auth/bxRepos/blee-pip/csPlayer/py3
 ** TODO Requires availability of piu_mbFullUsage svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
 ** TODO svcInvSiteRegBox.cs --regBoxPerfAddrs="['192.168.0.90']"  -i invSiteRegBoxConf_set
 ** TODO svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
 ** TODO svcInvSiteRegBox.cs  -i thisBox_findNu
-** TODO /bisos/venv/py3/dev-bisos3/bin/pip install
-** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-auth-oauthlib
-** TODO pandoc should be brought over at some point in one of the binspreps.
 ** ========== META Longer Term ==========
-** TODO In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
+** TODO bisos.stub: In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
 ** TODO In siteRegistrar, pass fsbo_envRun to performer, Merge marmee's runEnv and sysd with siteRegistrar
 ** TODO Splitup /bisos/core/bsip and bpip into below --- Turn below into a table in some Panel
 ** /bisos/core/unsited/bin -- /bisos/core/sited/bin -- /bisos/core/materialized/bin -- /bisos/core/stationed/bin
@@ -110,11 +102,9 @@
 ** +
 ** <<Phase-2>> Next Steps
 *** +
-*** DONE IMPORTANT VERIFY: In sysIdentity set run platformBasesUpdate.cs --PROBLEM. Look at the logfiles
-*** sudo -u bisos /bisos/venv/py3/bisos3/bin/pip3 install --no-cache-dir --force-reinstall --upgrade bisos.py3-all
 *** --------------  January 19, 2025 Start Date ---------------
 *** TODO Update to latest setuputils
-*** TODO Add Concept of Capability Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
+*** TODO Add Concept of Capabilities Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
 *** TODO Add Concept of Capability Phase -- In Cap Specification The above means earliest phase.
 *** TODO Add FreshDebianCaps as a Phase in vagrant file with  [[MiniBisos]]  and [[Cap:bisos.facter]]
 *** TODO Capture concept of Bx Objects - BPOs, BxRepoObjects (BRO), BxStaticObjects (BSO), BxForeignObjects(BFOs)
@@ -131,12 +121,12 @@
 *** -
 ** <<CleanUps>> Clean Ups Planning
 *** +
-*** TODO in pip install editable, get rid of warning
+*** DONE in pip install editable, get rid of warning
 *** ------------
-*** TODO Convert fileTreeManage.py of unisos to fileTreeManage.cs
+*** DONE Convert fileTreeManage.py of unisos to fileTreeManage.cs
 *** ---
-*** TODO Convert and test py2cs for cryptKeyring now in bisos.crypt
-*** TODO Convert and test py2cs for symCrypt now in bisos.crypt
+*** DONE Convert and test py2cs for cryptKeyring now in bisos.crypt
+*** DONE Convert and test py2cs for symCrypt now in bisos.crypt
 *** ---
 *** TODO Move from unisos to bisos gcipher
 *** TODO Move from unisos to bisos githubApi
@@ -280,11 +270,11 @@ git config --global pull.rebase false
 ####+END
 ** +
 ** graphviz binsprep somewhere
-** TODO [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
-** TODO [#A] Add to bisos.crypt --  pip install python-gnupg -- ModuleNotFoundError: No module named 'gnupg'
-** TODO [#A] pip install google-api-python-client  ModuleNotFoundError: No module named 'googleapiclient'
-** TODO [#A] pip install google-auth-oauthlib -- ModuleNotFoundError: No module named 'google_auth_oauthlib'
-** TODO [#A]  pip install python-magic -- ModuleNotFoundError: No module named 'magic' --
+** DONE [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
+** DONE [#A] Add to bisos.crypt --  pip install python-gnupg -- ModuleNotFoundError: No module named 'gnupg'
+** DONE [#A] pip install google-api-python-client  ModuleNotFoundError: No module named 'googleapiclient'
+** DONE [#A] pip install google-auth-oauthlib -- ModuleNotFoundError: No module named 'google_auth_oauthlib'
+** DONE [#A]  pip install python-magic -- ModuleNotFoundError: No module named 'magic' --
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee To Be Captured" :extraInfo "_Blee_ Misc"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -370,6 +360,7 @@ sudo virsh net-list --all
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee New Planned Features:* |]]  _Blee_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Enable bash-lsp -- sudo apt install shellcheck
 ** Adopt <<GPTEL>> --In combination with [[OLLAMA]]
 *** +
 *** Integration in Blee:: https://github.com/karthink/gptel?tab=readme-ov-file
@@ -401,7 +392,7 @@ sudo virsh net-list --all
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  NEXT GENERATION  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS Next Generation Plans" :extraInfo "_PyCS_ Next Generation  Plans"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/qqq
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Next Generation Plans:* |]]  _PyCS_ Next Generation  Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
