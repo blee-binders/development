@@ -50,7 +50,6 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 * +
-* constraints liberate liberties constrain -- https://www.youtube.com/watch?v=GqmsQeSzMdw
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deb12 Known Bugs" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -63,7 +62,7 @@
 ** TODO svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
 ** TODO svcInvSiteRegBox.cs  -i thisBox_findNu
 ** ========== META Longer Term ==========
-** TODO bisos.stub: In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
+** DONE bisos.stub: In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
 ** TODO In siteRegistrar, pass fsbo_envRun to performer, Merge marmee's runEnv and sysd with siteRegistrar
 ** TODO Splitup /bisos/core/bsip and bpip into below --- Turn below into a table in some Panel
 ** /bisos/core/unsited/bin -- /bisos/core/sited/bin -- /bisos/core/materialized/bin -- /bisos/core/stationed/bin
@@ -77,75 +76,40 @@
 ####+END
 #+caption: Development Table
 
-|----------+------------+------------+-------+---------+-----------------------------------------------------|
-| [[Phases]]   | Start Date | Completion | Dura- | Status  | Comments                                            |
-|          |            |            | tion  |         |                                                     |
-|----------+------------+------------+-------+---------+-----------------------------------------------------|
-| [[Phase-1]]  | 2025-01-12 | 2025-01-19 | 1 wks | Started | bisos.capability for facter and registrar           |
-| [[Phase-2]]  | 2025-01-19 | 2025-01-26 | 1 wks | Planned | Cleanup: Most;y eliminate icm&unisos Regression test |
-| [[Phase-3]]  | 2025-01-26 |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs      |
-| [[Phase-4]]  |            |            | 2 wks | Planned | PBS and PALS and DNS for geneweb                    |
-| [[Phase-5]]  |            |            | 3 wks | Planned | Qmail, PBS, PALS, DNS                               |
-| [[Phase-6]]  |            |            | 1 wks | Planned | CMDB for site and Libre-Center                      |
-| [[Phase-7]]  |            |            | 1 wks | Planned | Rebuild plone3 on db12                              |
-| [[Phase-8]]  |            |            | 1 wks | Planned | Decommision all exisiting old machines              |
-| [[Phase-9]]  |            |            | 1 wks | Planned | Blee to Emacs30                                     |
-|----------+------------+------------+-------+---------+-----------------------------------------------------|
-| [[Phase-10]] |            |            | 1 wks | Planned | Adopt Hugo                                          |
-| [[Phase-11]] |            |            | 1 wks | Planned | Cleanup DNS, All Machinary                          |
-| [[Phase-12]] |            |            | 2 wks | Planned | LCNT Updates and Reveal                             |
-| [[Phase-13]] |            |            | 2 wks | Planned | MARMEE Updates and Usage                            |
-| [[Phase-14]] |            |            | 3 wks | Planned | ByName Factory                                      |
-|----------+------------+------------+-------+---------+-----------------------------------------------------|
+|----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phases]]   | Start Date | Completion | Dura- | Status  | Comments                                             |
+|          |            |            | tion  |         |                                                      |
+|----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phase-1]]  | 2025-01-12 | 2025-01-19 | 1 wks | Started | bisos.capability for facter and registrar            |
+| [[Phase-2]]  | 2025-01-19 | 2025-01-26 | 1 wks | Planned | Cleanup: Mostly eliminate icm&unisos Regression test |
+| [[Phase-3]]  | 2025-01-26 |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs       |
+| [[Phase-4]]  |            |            | 2 wks | Planned | PBS and PALS and DNS for geneweb                     |
+| [[Phase-5]]  |            |            | 3 wks | Planned | Qmail, PBS, PALS, DNS                                |
+| [[Phase-6]]  |            |            | 1 wks | Planned | CMDB for site and Libre-Center                       |
+| [[Phase-7]]  |            |            | 1 wks | Planned | Rebuild plone3 on db12                               |
+| [[Phase-8]]  |            |            | 1 wks | Planned | Decommision all exisiting old machines               |
+| [[Phase-9]]  |            |            | 1 wks | Planned | Blee to Emacs30                                      |
+|----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phase-10]] |            |            | 1 wks | Planned | Adopt Hugo                                           |
+| [[Phase-11]] |            |            | 1 wks | Planned | Cleanup DNS, All Machinary                           |
+| [[Phase-12]] |            |            | 2 wks | Planned | LCNT Updates and Reveal                              |
+| [[Phase-13]] |            |            | 2 wks | Planned | MARMEE Updates and Usage                             |
+| [[Phase-14]] |            |            | 3 wks | Planned | ByName Factory                                       |
+|----------+------------+------------+-------+---------+------------------------------------------------------|
 
 
 ** +
-** <<Phase-2>> Next Steps
-*** +
-*** --------------  January 19, 2025 Start Date ---------------
-*** TODO Update to latest setuputils
-*** TODO Add Concept of Capabilities Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
-*** TODO Add Concept of Capability Phase -- In Cap Specification The above means earliest phase.
-*** TODO Add FreshDebianCaps as a Phase in vagrant file with  [[MiniBisos]]  and [[Cap:bisos.facter]]
-*** TODO Capture concept of Bx Objects - BPOs, BxRepoObjects (BRO), BxStaticObjects (BSO), BxForeignObjects(BFOs)
-*** TODO Starting point for bisos.sbom --- Mimic what straight.el keywords are -- Start with doom, git/extPkgs
-*** TODO Starting point for bisos.sbom --- <<MiniBisos>>
-*** TODO Add new pip packages using binsPrep. All that is needed for <<Cap:bisos.facter>>
-*** DONE Add title to VM during Materialization
-*** --------------- MISC
-*** TODO Add apt-get symlinks
-*** TODO /bisos/git/auth/bxRepos/blee/mtdt-distribution/  -- has mohsen specific stuff
-*** ----------------  LLM
-*** ---------------
-*** --------------  January 26, 2025 Start Date ---------------
-*** -
 ** <<CleanUps>> Clean Ups Planning
 *** +
-*** DONE in pip install editable, get rid of warning
-*** ------------
-*** DONE Convert fileTreeManage.py of unisos to fileTreeManage.cs
-*** ---
-*** DONE Convert and test py2cs for cryptKeyring now in bisos.crypt
-*** DONE Convert and test py2cs for symCrypt now in bisos.crypt
-*** ---
-*** TODO Move from unisos to bisos gcipher
-*** TODO Move from unisos to bisos githubApi
-*** ---
-*** Delete x822, examples etc and test full builds
-*** ---
-*** TODO Delete ALL-OF  unisos-pip organization
-*** -------------
-*** TODO Move blee unisos.csPlayer to bisos.blee
-*** TODO Compate unisos.icmPlayer with unisos.csPlayer
-*** TODO Convert all uses of  unisos.csPlayer to bisos.blee.csPlayer
-*** TODO Delete ALL-OF  bisos-pip organization
-*** -------------
-*** TODO Absorb or delete /bisos/git/bxRepos/roPerf-pip
-*** TODO Delete ALL-OF  roPerf-pip organization
-*** ------------
-*** TODO In bisos-pip Convert mmwsIcm from unisos to bisos
+*** DONE Add ftoProc.sh updates from pypiProc.sh
+*** DONE With ftoProc.sh run ReInstall -- Do not follow symlinks
+*** DONE Rebuild all  using ftoProc.sh
+*** DONE Get rid of Panel.org
+*** TODO Absorb all pals
+*** Upload and push
+*** Testin in VM
 *** TODO Get rid of obsoleted repos
-*** TODO Fully get rid of unisos and icm everywhere in bisos-pip
+*** WAITING Fully get rid of unisos and icm everywhere in bisos-pip
 *** -----------
 *** -
 ** <<Phase-1>> Next Steps
@@ -182,7 +146,7 @@
 ** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
 ** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
 ** TODO Move /bisos/core/asc to /bisos/asc
-** TODO apt-get whois
+** TODO apt-get install whois
 ** TODO pmi_ByN-100001/par.live.git  -- Should become par-live
 ** TODO Initial hostname should include .intra for qmail install
 ** TODO bashrc prompt should strip .intra
@@ -194,7 +158,7 @@ Comment out auto line in /etc/network/interfaces
 auto swp1
 iface swp1
     link-down yes
-** TODO Global Terminology Change For Next Major Release -- bxo becomes bpo -- ByStar Portable Object
+** TODO Global Terminology Change For Next Major Release -- bxo becomes one of  bp, bro, bso
 ** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
 ** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr=
 ** TODO BISOS Concepts -- Conviviality -- Universality -- Genercity -- Exensibility
@@ -263,6 +227,8 @@ git config --global pull.rebase false
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS To Be Captured:* |]]  _PyCS Framework_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO pip install deprecated
+** TODO Adopt icm.opSuccessAndNoResult(cmndOutcome)
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS To Be Captured" :extraInfo "_BISOS_ Misc"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -292,6 +258,7 @@ git config --global pull.rebase false
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PyCS Framework New Planned Features:* |]]  _PyCS Framework_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Add telemetry to pycs.
 ** Add gRPC as a service model of PyCS -- Similar to RPYC
 *** +
 *** Use gRPC -- Not OpenAPI, REST, etc.
@@ -305,7 +272,22 @@ git config --global pull.rebase false
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS New Planned Features:* |]]  _BISOS_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** WAITING Create bisos-pip/capSpecs --- emacs30, lcnt -- develMode
+* General Features and Improvements
+*** +
+*** --------------
+*** TODO Capture concept of BXO any: BPOs, BxRepoObjects (BRO), BxStaticObjects (BSO), BxForeignObjects(BFOs)
+*** TODO Add new pip packages using binsPrep. All that is needed for <<Cap:bisos.facter>>
+*** --------------- MISC
+*** TODO Add apt-get install symlinks
+*** TODO /bisos/git/auth/bxRepos/blee/mtdt-distribution/  -- has mohsen specific stuff
+*** -
+** WAITING Create bisos-pip/capSpecs and Phases --- emacs30, lcnt -- develMode
+*** +
+*** DONE Update to latest setuputils
+*** TODO Add Concept of Capabilities Phase -- UnsitedPhase/RawBisos, Vs SitedPhase Vs FreshDebian
+*** TODO Add Concept of Capability Phase -- In Cap Specification The above means earliest phase.
+*** TODO Add FreshDebianCaps as a Phase in vagrant file with  [[MiniBisos]]  and [[Cap:bisos.facter]]
+*** -
 ** WAITING Create bisos-pip/virsh/virshBpo --- Absorb bpoContainerStation.sh into bpoPlatformStation.cs
 *** +
 *** Use python-virsh
@@ -323,6 +305,9 @@ sudo virsh net-list --all
 *** -
 ** WAITING Create bisos-pip/sbom  --- Software bill of material
 *** +
+*** TODO use bisos.sbom to build bisos.platform.platformStub.cs.
+*** TODO Starting point for bisos.sbom --- Mimic what straight.el keywords are -- Start with doom, git/extPkgs
+*** TODO Starting point for bisos.sbom --- <<MiniBisos>>
 *** Move binsprep to bisos-pip/sbom
 *** Add seed for git cloning similar to straight.el
 *** Add seed for directory creation
