@@ -51,85 +51,47 @@
 ####+END
 * +
 * -B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Deb12 Known Bugs" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Deb12 Known Bugs:* |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-** +
-** TODO Absorb  https://github.com/jsynacek/emacs-virt-manager
-** TODO Requires availability of piu_mbFullUsage svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
-** TODO svcInvSiteRegBox.cs --regBoxPerfAddrs="['192.168.0.90']"  -i invSiteRegBoxConf_set
-** TODO svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
-** TODO svcInvSiteRegBox.cs  -i thisBox_findNu
-** ========== META Longer Term ==========
-** DONE bisos.stub: In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
-** TODO In siteRegistrar, pass fsbo_envRun to performer, Merge marmee's runEnv and sysd with siteRegistrar
-** TODO Splitup /bisos/core/bsip and bpip into below --- Turn below into a table in some Panel
-** /bisos/core/unsited/bin -- /bisos/core/sited/bin -- /bisos/core/materialized/bin -- /bisos/core/stationed/bin
-** /bisos/core/maybe/bin -- gitsh
-** /bisos/core/usage  -- other than lcnt and mail usage facilities
-** /bisos/core/asc  -- Adopted Service Component
-** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo "TABULAR"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 #+caption: Development Table
 
-|----------+------------+------------+-------+---------+------------------------------------------------------|
-| [[Phases]]   | Start Date | Completion | Dura- | Status  | Comments                                             |
-|          |            |            | tion  |         |                                                      |
-|----------+------------+------------+-------+---------+------------------------------------------------------|
-| [[Phase-1]]  | 2025-01-12 | 2025-01-19 | 1 wks | Started | bisos.capability for facter and registrar            |
-| [[Phase-2]]  | 2025-01-19 | 2025-01-26 | 1 wks | Planned | Cleanup: Mostly eliminate icm&unisos Regression test |
-| [[Phase-3]]  | 2025-01-26 |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs       |
-| [[Phase-4]]  |            |            | 2 wks | Planned | PBS and PALS and DNS for geneweb                     |
-| [[Phase-5]]  |            |            | 3 wks | Planned | Qmail, PBS, PALS, DNS                                |
-| [[Phase-6]]  |            |            | 1 wks | Planned | CMDB for site and Libre-Center                       |
-| [[Phase-7]]  |            |            | 1 wks | Planned | Rebuild plone3 on db12                               |
-| [[Phase-8]]  |            |            | 1 wks | Planned | Decommision all exisiting old machines               |
-| [[Phase-9]]  |            |            | 1 wks | Planned | Blee to Emacs30                                      |
-|----------+------------+------------+-------+---------+------------------------------------------------------|
-| [[Phase-10]] |            |            | 1 wks | Planned | Adopt Hugo                                           |
-| [[Phase-11]] |            |            | 1 wks | Planned | Cleanup DNS, All Machinary                           |
-| [[Phase-12]] |            |            | 2 wks | Planned | LCNT Updates and Reveal                              |
-| [[Phase-13]] |            |            | 2 wks | Planned | MARMEE Updates and Usage                             |
-| [[Phase-14]] |            |            | 3 wks | Planned | ByName Factory                                       |
-|----------+------------+------------+-------+---------+------------------------------------------------------|
+|-----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phases]]    | Start Date | Completion | Dura- | Status  | Comments                                             |
+|           |            |            | tion  |         |                                                      |
+|-----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phase-1]]   | 2025-01-12 | 2025-01-19 | 1 wks | Started | bisos.capability for facter and registrar            |
+| [[Phase-2]]   | 2025-01-19 | 2025-01-26 | 1 wks | Planned | Cleanup: Mostly eliminate icm&unisos Regression test |
+| [[Phase-2.1]] | 2025-01-26 | 2025-02-20 | 3 wks | Planned | Devel mode and full cleanups- elim unused orgs/repos |
+| [[Phase-3]]   | 2025-02-20 |            | 1 wks | Planned | Station NAT DHCP WiFi in Site in Permanent VMs       |
+| [[Phase-4]]   |            |            | 2 wks | Planned | PBS and PALS and DNS for geneweb                     |
+| [[Phase-5]]   |            |            | 3 wks | Planned | Qmail, PBS, PALS, DNS                                |
+| [[Phase-6]]   |            |            | 1 wks | Planned | CMDB for site and Libre-Center                       |
+| [[Phase-7]]   |            |            | 1 wks | Planned | Rebuild plone3 on db12                               |
+| [[Phase-8]]   |            |            | 1 wks | Planned | Decommision all exisiting old machines               |
+| [[Phase-9]]   |            |            | 1 wks | Planned | Blee to Emacs30                                      |
+|-----------+------------+------------+-------+---------+------------------------------------------------------|
+| [[Phase-10]]  |            |            | 1 wks | Planned | Adopt Hugo                                           |
+| [[Phase-11]]  |            |            | 1 wks | Planned | Cleanup DNS, All Machinary                           |
+| [[Phase-12]]  |            |            | 2 wks | Planned | LCNT Updates and Reveal                              |
+| [[Phase-13]]  |            |            | 2 wks | Planned | MARMEE Updates and Usage                             |
+| [[Phase-14]]  |            |            | 3 wks | Planned | ByName Factory                                       |
+|-----------+------------+------------+-------+---------+------------------------------------------------------|
 
 
 ** +
 ** <<CleanUps>> Clean Ups Planning
 *** +
-*** DONE Add ftoProc.sh updates from pypiProc.sh
-*** DONE With ftoProc.sh run ReInstall -- Do not follow symlinks
-*** DONE Rebuild all  using ftoProc.sh
-*** DONE Get rid of Panel.org
-*** TODO Absorb all pals
-*** Upload and push
-*** Testin in VM
-*** TODO Get rid of obsoleted repos
+*** WAITING Get rid of obsoleted repos
 *** WAITING Fully get rid of unisos and icm everywhere in bisos-pip
-*** -----------
 *** -
 ** <<Phase-1>> Next Steps
 *** +
-*** --------------  January 12, 2025 Start Date ---------------
-*** First Do it For Facter
-*** DONE Implement  cba-is-p-sysdSys.cs
-*** DONE Implement cbs-is-p-sysdSys-facter.cs
-*** DONE Implement cbm-process-cbs.cs
-*** DONE cbm-process-cbs.cs --
-*** DONE To bisos.platform add engravePlatform  bpoId /var/platform/bpo
-*** DONE cbmBase_{enableCbs, disableCbs,listCbs,verifyCbs} /var/platform/bpo/sys/cbm
-*** DONE from cbs -- cbmBase_enableCbsSelf
-*** DONE From cbs-is-p-sysdSys-facter.cs -- Use binsPrep and materialize -- Finish e2e for facter
-*** DONE Modernize facter sysd
-*** DONE Create Registrar sysd
-*** DONE Modernize panels of site registrar
-*** DONE Use all of above in context of Registrar
+*** -------------- February 20, 2025 Start Date ---------------
+*** TODO First Do it For Facter
 *** TODO Use all of above in Fresh VM to Station site registrar
-*** --------------  January 19, 2025 End Date ---------------
+*** --------------  February 20, 2025 End Date ---------------
 *** -
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs, Problems And Next Steps" :anchor "" :extraInfo ""
@@ -137,90 +99,29 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
-** TODO keepassxc bins prep is missing.
-** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
-** TODO Add This: realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
-** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
-** TODO /bisos/core/bsip/bin/usgBpoSshManage.sh and usgBpoSshCustom should be merged.
-** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
-** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
-** TODO Move /bisos/core/asc to /bisos/asc
-** TODO apt-get install whois
-** TODO pmi_ByN-100001/par.live.git  -- Should become par-live
-** TODO Initial hostname should include .intra for qmail install
-** TODO bashrc prompt should strip .intra
-** TODO [800]: abode=Mobile vis_nat_update
-/bisos/core/bsip/lib/opDoLib.sh: line 332: vis_nat_update: command not found
-** TODO Disable Network Interfaces
-sudo ifdown --admin-state swp1
-Comment out auto line in /etc/network/interfaces
-auto swp1
-iface swp1
-    link-down yes
-** TODO Global Terminology Change For Next Major Release -- bxo becomes one of  bp, bro, bso
+** TODO Global Terminology Change For Next Major Release -- bxo becomes one of  bpo, bro, bso
+** TODO Global Terminology Change For:: bxo becomes bpo (portable) , bro (repo), bso (static)
 ** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
-** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr=
-** TODO BISOS Concepts -- Conviviality -- Universality -- Genercity -- Exensibility
-** TODO lpEach.sh should read its inputs optionally as lines or as words
-** TODO lpEach.sh should optionally execute its produced lines or pass through lpEach.sh | bxRunLines
-** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
-** TODO in sysCharGuest, git rid of testNet
-** TODO IMPORTANT sysCharDevel.sh prompts for github confirmation -- cant be automated run
-** sysCharRealize problem --   parName=distro  is not set
-    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distro -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,331
-    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distroType -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,429
-** TODO pubB and pubB-control should exist but be unassigned
-    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,419
-    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB-control -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,515
-** TODO sysCharRealize problem
-   VIS-1002-5: ** [182]: sysCharRealize.sh -h -v -n showRun -p bxoId=pmp_VIS-1002 -i basesFullCreate 
-    VIS-1002-5: EH_,siteContainerAssign.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: siteContainerAssign.sh::vis_fromBxoIdFindContainerBase[213]: eval [[ 0 -eq 1 ]] [ErrCode]= 1
-    VIS-1002-5: ** [514]: vis_accountVerify pms_clusterNeda 1000003 2222 /bxo/iso/pms_clusterNeda 
-    VIS-1002-5: EH_,bisosSiteSetup.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: bisosSiteSetup.sh::vis_fromSiteBxoIdGet_domainsBxoId[356]: eval [ ! -z ] [ErrCode]= 1
-** TODO Initial lpCurrents
-    VIS-1002-5: ** [202]: bxeRealize.sh -n showRun -v -h -p bxoId=prs_bisos -p privacy=priv -p bxeDesc=/bisos/var/bxo/construct/priv/prs_bisos/rbxe/bxeDesc -i bxoAcctCreate 
-    VIS-1002-5: EH_,bxeRealize.sh,lpCurrentsGet,104: PROBLEM: Missing bxoAcctsList
-** TODO Where should -- sudo apt install firmware-linux -- for deb 11 go?
-** TODO Create sysCharSetup.sh -- fillup content from ~sysChar/sys/bin
-** TODO Revisit  sysCharHostPreps.sh
-** TODO has bad permission /bxo/usg/bystar/.ssh/id_rsa -- probably inherited from /bxo
-** TODO /bisos/bsip/bin/bxoPubGithubManage.sh git clone should depend on dev and perhaps use github auth
-** TODO onSysInvokation only. Some functions should only run on thisSys and not on otherwise.
-** TODO In sysEssentialsBinsPrep.sh also get gparted.
-** WAITING Disable auto suspend on Deb11 --- Needs Testing --- Capture this as a Capability
-*** sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-*** Do not autosuspend  -- details 
-# - Do not autosuspend
-
-[org/gnome/settings-daemon/plugins/power]
-
-sleep-inactive-ac-type='blank'
-** WAITING Early git config --global setups -- Done in ~/.bashrc Needs Testing
-git config --global init.defaultBranch master
-git config --global pull.rebase false
-** TODO /bisos/git/bxRepos/bisos/apps needs to be auto retrieved (cloned)
-** Building vagrant baseboxes. -- https://blog.engineyard.com/building-a-vagrant-box
-** https://leyhline.github.io/2019/02/16/creating-a-vagrant-base-box/
-** https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
-** TODO bleeclient.sh -i emlFrame -- takes stdin, puts it in a tmp file, creates a 
-** TODO Buy into --  startOrgPanel.sh -i examples | emlOutFilter.sh -i iimToEmlStdout | bleeclient.sh -
-** TODO better -- startOrgPanel.sh -i examples | shIcmToEml | bleeclient.sh -i emlFrame
-** TODO better -- startOrgPanel.sh -i examples | pyIcmToEml | bleeclient.sh -i emlFrame
-** TODO more better: shIcmPlayer startOrgPanel.sh  -- pyIcmPlayer example.py
-** TODO Add all folders from /bisos/core of /bisos/panels/bisos-core/baseDirs/bisosBaseDirs/fullUsagePanel-en.org
-   SCHEDULED: <2021-01-24 Sun>
-** TODO Add bx:bsip:bash/libLoadOnce to libraries -- Test single inclusions.
-** TODO Move All bins Preps from /opt/public
-** TODO Define full set of provision targets
-** TODO Get bx-gitRepos.sh to be complete and in use
-** TODO sudo apt install ubuntu-restricted-extras
-** TODO Make sure pip2 install bisos.currents is included
-** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
+** TODO Global Terminology Change For:: cntnr -- Container to Platform (pltfrm)
+** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr= -- -p pltfrm=
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "STABLE"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Panel Links and Per Pkg TODOs" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  STABLE  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Panel Links and Per Pkg TODOs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO [#B] bisos-pip:  [[file:/bisos/panels/bisos-core/bisos-pip/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] Facter: [[file:/bisos/panels/bisos-core/bisos-pip/bisos.facter/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] CMDB:  [[file:/bisos/panels/bisos-core/bisos-pip/bisos.cmdb/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] bisos.debian:  [[file:/bisos/panels/bisos-core/bisos-pip/bisos.debian/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] bisos.binsprep:  [[file:/bisos/panels/bisos-core/bisos-pip/bisos.binsprep/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] bisos.examples:  [[file:/bisos/panels/bisos-core/bisos-pip/bisos.examples/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#B] Create Site CMDB Panel in SiteManager VM
+** WAITING [#B] Site Registrar:  [[file:/bisos/panels/bisos-core/bisos-pip/bisos.cmdb/_nodeBase_/fullUsagePanel-en.org]]
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "TO BE CAPTURED"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  TO BE CAPTURED  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "PyCS To Be Captured" :extraInfo "_PyCS Framework_ Misc"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -229,24 +130,113 @@ git config --global pull.rebase false
 ** +
 ** TODO pip install deprecated
 ** TODO Adopt icm.opSuccessAndNoResult(cmndOutcome)
+** TODO Use seedGraphViz to capture usage capability bundles (UCBs) --- Capture from NoteBook, Assemble vs Svc
+** TODO Capture seedGraphViz Process flow  and packet flow for incoming and outgoing qmailMts traffic
+** TODO Use seedGraphviz to capture Marmee and Qmail processes -- qmailUsage
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS To Be Captured" :extraInfo "_BISOS_ Misc"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS To Be Captured:* |]]  _BISOS_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO apt-get install whois
+** TODO [#B] *1H* See sub tree: Add to raw-bisos.sh concept of BISOS Capability Bundles (BCB) -- map to fgc (Functionaly Grouped Components) eg: plus hosting usgPlus servicePlus
+*** +
+*** Create a BISOS Software Management Menu  for BCB item under Panels
+*** BCB's are one of Usage Capability Bundles, Service Capability Bundles or Common Capability Bundles
+*** Draw BCB Tree - commonBase -- usgEnv|svcEnv -- usgEnv|MediaCenter, usgEnv|lcnt
+*** BCBs are stored some place in bisos/var
+*** -B|
+** TODO (lsp-mode -1)  In dblocks
 ** graphviz binsprep somewhere
 ** DONE [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
 ** DONE [#A] Add to bisos.crypt --  pip install python-gnupg -- ModuleNotFoundError: No module named 'gnupg'
 ** DONE [#A] pip install google-api-python-client  ModuleNotFoundError: No module named 'googleapiclient'
 ** DONE [#A] pip install google-auth-oauthlib -- ModuleNotFoundError: No module named 'google_auth_oauthlib'
 ** DONE [#A]  pip install python-magic -- ModuleNotFoundError: No module named 'magic' --
+** TODO Requires availability of piu_mbFullUsage svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
+** TODO svcInvSiteRegBox.cs --regBoxPerfAddrs="['192.168.0.90']"  -i invSiteRegBoxConf_set
+** TODO svcInvSiteRegBox.cs --perfName="csSiteRegistrars"  -i reg_sapCreateBox
+** TODO svcInvSiteRegBox.cs  -i thisBox_findNu
+** ========== META Longer Term ==========
+** DONE bisos.stub: Moved to bisos.platform -- In PyCsFramework, Get a RO (siteRegistrar) working outside of /bisos Use ~/bisos instead of /bisos
+** TODO In siteRegistrar, pass fsbo_envRun to performer, Merge marmee's runEnv and sysd with siteRegistrar
+** TODO Splitup /bisos/core/bsip and bpip into below --- Turn below into a table in some Panel
+** /bisos/core/unsited/bin -- /bisos/core/sited/bin -- /bisos/core/materialized/bin -- /bisos/core/stationed/bin
+** /bisos/core/maybe/bin -- gitsh
+** /bisos/core/usage  -- other than lcnt and mail usage facilities
+** /bisos/core/asc  -- Adopted Service Component
+** ======================
+** WAITING [#A] _12_ Modernized and Improved BPO Rim and Ring Services -- Do them as scsMaterializable
+** -------- BEGIN:  Facter and CMDB ---------
+** DELEGATED [#A] Common: Modernized panels/bisos.name from pypiProc.sh
+** TODO [#A] Modernize bisos.basics for pyRunAs
+** TODO [#A] Modernize bisos.examples
+*** TODO [#B] Create Site CMDB Panel in SiteManager VM
+** -------- END:  Facter and CMDB ---------
+** -------- BEGIN:  Site Registrar ---------
+** TODO [#B] Run Site Registrar in  SiteManager VM
+** -------- END:  Site Registrar ---------
+** -------- BEGIN:  ScsMateriaize --------- Self-Contained Services
+** TODO [#B] Panel document scsMater -- self-contain-service-materialize somewhere
+** TODO [#B] Augment scsMaterRouter.sh -- Fix Auto reboot + ~/natRouter.sh  -- "VSG-deb11-3" "192.168.0.220" "NAT Router" :host "r610-1"
+** TODO [#B] Cleanup scsMaterWifiApBridged.sh parametrize and add niche and test
+** TODO [#B] Revisit scsDhcpServer --- Link with registrar
+** -------- END: ScsMaterialize ---------
+** -------- BEGIN:  Misc ---------
+** TODO [#A] Cleanup bisosPyEnv with pipx list, /bin/pip list all 5 of them sys, cur, dev, adapt, pipx
+** TODO [#A] Git Push everytyhing for pypi push on .90
+** TODO [#A] Complete Geneweb documentation as Panels
+** TODO [#A] Complete Kodi and AudioOut tools + Documentation as Panels
+** WAITING [#A] CAPTURE :: Renewed bystar.co, payk.co, byname.co -- Accounts Admin 866-908-3442
+** -------- End:  Misc ---------
+** ======================
+** ======================
+** WAITING [#A] _13_ BISOS Cleanups
+** -------- BEGIN: PyCS Telemetry --------
+** TODO [#A] https://opentelemetry.io/docs/languages/python/instrumentation/
+** TODO [#A] https://stackoverflow.com/questions/10973362/python-logging-function-name-file-name-line-number-using-a-single-file
+** TODO [#A] bisos.marmee  -- [[file:/bisos/git/auth/bxRepos/bisos-pip/marmee/py3/panels/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#A] bisos.qmail  -- [[file:/bisos/git/auth/bxRepos/bisos-pip/qmail/py3/panels/_nodeBase_/fullUsagePanel-en.org]]
+** -------- END: PyCS Telemetry --------
+** ======================
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Qmail MAIL MARMEE" :extraInfo "_Mail_ Misc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Qmail MAIL MARMEE:* |]]  _Mail_ Misc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Qmail Addons  http://whmcr.com/old-content/qmail-rrdtool-graphs/
+---- BxNG Next Steps
+1) Add file Overwrite to pkgRePub -p inFile=xxx
+2) Add item for patch Of Qtools
+3) Test build of Qtools with the patch
+4) Add tp Top repPub -- qtoolsRePub and PkgPatchCreate
+5) Absorb Qtools into UcspiSsl
+6) Build in Full UcspiSsl
+7) From UcspiSsl Create modedTemplates For SrcPkgBinsPrep
+8) Create TopLevel BxTopMailMta take from InterimTopPlatform
+9) Build a Functional MTA
+** Email Best Practices https://support.google.com/mail/answer/81126#authentication
+** TODO  Capture somewhere https://phrasee.co/news/a-brief-history-of-email/
+** ======================
+** WAITING [#A] _14_ Qmail Revival and ResidentQmail Improvements
+** -------- BEGIN: Resident Qmail Marmee Improvements --------
+** TODO [#A] bisos.marmee  -- [[file:/bisos/git/auth/bxRepos/bisos-pip/marmee/py3/panels/_nodeBase_/fullUsagePanel-en.org]]
+** TODO [#A] bisos.qmail  -- [[file:/bisos/git/auth/bxRepos/bisos-pip/qmail/py3/panels/_nodeBase_/fullUsagePanel-en.org]]
+** -------- END: Resident Qmail Marmee Improvements --------
+** -------- BEGIN: NotQmail Revival --------
+** TODO [#A] Point to relevant Panel
+** TODO [#A] Bins preps should be same as ResidentQmail
+** -------- END: Resident Qmail Marmee Improvements --------
+** ======================
+
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Blee To Be Captured" :extraInfo "_Blee_ Misc"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee To Be Captured:* |]]  _Blee_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO Absorb  https://github.com/jsynacek/emacs-virt-manager
 ** (require 'autoload) to fix https://github.com/doomemacs/doomemacs/issues/8251
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "STABLE"
@@ -272,7 +262,9 @@ git config --global pull.rebase false
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS New Planned Features:* |]]  _BISOS_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-* General Features and Improvements
+** In bisos-pip/capSpecs create::  rawBisos_pkgs_apt-sbom.cs -- rawBisos_pkgs_pip-sbom.cs
+** In bisos-pip/capSpecs create:: rawBisos_fileSys_bisos-sbom.cs
+** General Features and Improvemsents
 *** +
 *** --------------
 *** TODO Capture concept of BXO any: BPOs, BxRepoObjects (BRO), BxStaticObjects (BSO), BxForeignObjects(BFOs)
@@ -345,6 +337,7 @@ sudo virsh net-list --all
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Blee New Planned Features:* |]]  _Blee_ Development Plans  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Safe-File-Variables.html
 ** Enable bash-lsp -- sudo apt install shellcheck
 ** Adopt <<GPTEL>> --In combination with [[OLLAMA]]
 *** +
@@ -397,7 +390,89 @@ sudo virsh net-list --all
 ####+END
 ** +
 ** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "----------" :extraInfo "OLD and HISTORIC"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _----------_: |]]  OLD and HISTORIC  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs, Problems And Next Steps" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
+** TODO keepassxc bins prep is missing.
+** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
+** TODO Add This: realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
+** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
+** TODO /bisos/core/bsip/bin/usgBpoSshManage.sh and usgBpoSshCustom should be merged.
+** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
+** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
+** TODO ** TODO pmi_ByN-100001/par.live.git  -- Should become par-live
+** TODO Initial hostname should include .intra for qmail install
+** TODO bashrc prompt should strip .intra
+** TODO [800]: abode=Mobile vis_nat_update
+/bisos/core/bsip/lib/opDoLib.sh: line 332: vis_nat_update: command not found
+** TODO Disable Network Interfaces
+sudo ifdown --admin-state swp1
+Comment out auto line in /etc/network/interfaces
+auto swp1
+iface swp1
+    link-down yes
+** TODO lpEach.sh should read its inputs optionally as lines or as words
+** TODO lpEach.sh should optionally execute its produced lines or pass through lpEach.sh | bxRunLines
+** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
+** TODO in sysCharGuest, git rid of testNet
+** sysCharRealize problem --   parName=distro  is not set
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distro -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,331
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/sysChar/sysInfo.fps parName=distroType -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:35,429
+** TODO pubB and pubB-control should exist but be unassigned
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,419
+    VIS-1002-5: CRITICAL EH_Info: Missing parRoot=/bxo/r3/iso/pmp_VIS-1002/var/sysCharConveyInfo/netIfs parName=pubB-control -- /bisos/venv/py2/bisos3/bin/fileParamManage.py:732:cmnd: -- 2021-06-05 06:34:29,515
+** TODO sysCharRealize problem
+   VIS-1002-5: ** [182]: sysCharRealize.sh -h -v -n showRun -p bxoId=pmp_VIS-1002 -i basesFullCreate
+    VIS-1002-5: EH_,siteContainerAssign.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: siteContainerAssign.sh::vis_fromBxoIdFindContainerBase[213]: eval [[ 0 -eq 1 ]] [ErrCode]= 1
+    VIS-1002-5: ** [514]: vis_accountVerify pms_clusterNeda 1000003 2222 /bxo/iso/pms_clusterNeda
+    VIS-1002-5: EH_,bisosSiteSetup.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: bisosSiteSetup.sh::vis_fromSiteBxoIdGet_domainsBxoId[356]: eval [ ! -z ] [ErrCode]= 1
+** TODO Initial lpCurrents
+    VIS-1002-5: ** [202]: bxeRealize.sh -n showRun -v -h -p bxoId=prs_bisos -p privacy=priv -p bxeDesc=/bisos/var/bxo/construct/priv/prs_bisos/rbxe/bxeDesc -i bxoAcctCreate
+    VIS-1002-5: EH_,bxeRealize.sh,lpCurrentsGet,104: PROBLEM: Missing bxoAcctsList
+** TODO Where should -- sudo apt install firmware-linux -- for deb 11 go?
+** TODO Create sysCharSetup.sh -- fillup content from ~sysChar/sys/bin
+** TODO Revisit  sysCharHostPreps.sh
+** TODO has bad permission /bxo/usg/bystar/.ssh/id_rsa -- probably inherited from /bxo
+** TODO /bisos/bsip/bin/bxoPubGithubManage.sh git clone should depend on dev and perhaps use github auth
+** TODO onSysInvokation only. Some functions should only run on thisSys and not on otherwise.
+** TODO In sysEssentialsBinsPrep.sh also get gparted.
+** WAITING Disable auto suspend on Deb11 --- Needs Testing --- Capture this as a Capability
+*** sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+*** Do not autosuspend  -- details
+# - Do not autosuspend
 
+[org/gnome/settings-daemon/plugins/power]
+
+sleep-inactive-ac-type='blank'
+** WAITING Early git config --global setups -- Done in ~/.bashrc Needs Testing
+git config --global init.defaultBranch master
+git config --global pull.rebase false
+** TODO /bisos/git/bxRepos/bisos/apps needs to be auto retrieved (cloned)
+** Building vagrant baseboxes. -- https://blog.engineyard.com/building-a-vagrant-box
+** https://leyhline.github.io/2019/02/16/creating-a-vagrant-base-box/
+** https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
+** TODO bleeclient.sh -i emlFrame -- takes stdin, puts it in a tmp file, creates a
+** TODO Buy into --  startOrgPanel.sh -i examples | emlOutFilter.sh -i iimToEmlStdout | bleeclient.sh -
+** TODO better -- startOrgPanel.sh -i examples | shIcmToEml | bleeclient.sh -i emlFrame
+** TODO better -- startOrgPanel.sh -i examples | pyIcmToEml | bleeclient.sh -i emlFrame
+** TODO more better: shIcmPlayer startOrgPanel.sh  -- pyIcmPlayer example.py
+** TODO Add all folders from /bisos/core of /bisos/panels/bisos-core/baseDirs/bisosBaseDirs/fullUsagePanel-en.org
+   SCHEDULED: <2021-01-24 Sun>
+** TODO Add bx:bsip:bash/libLoadOnce to libraries -- Test single inclusions.
+** TODO Move All bins Preps from /opt/public
+** TODO Define full set of provision targets
+** TODO Get bx-gitRepos.sh to be complete and in use
+** TODO sudo apt install ubuntu-restricted-extras
+** TODO Make sure pip2 install bisos.currents is included
+** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
+** B|
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
