@@ -85,23 +85,37 @@
 *** +
 *** WAITING Get rid of obsoleted repos
 *** WAITING Fully get rid of unisos and icm everywhere in bisos-pip
-*** TODO atexit.register(print,"Exiting Python Script!") -- https://www.geeksforgeeks.org/detect-script-exit-in-python/
-*** TODO @atexit.register
-def goodbye():
-    print("Exiting Python Script!")
+*** WAITING bpoFpsCls.py, fpCls.py fto.py, fp.py Cleanups::
+- ftoProc.cs :: New Idea --  Equivalent of ftoProc.sh with seed machinary.
+- =============
+- fp.py :: Cleanups
+- =============
+- fpCls.py :: type hints for fpBase  and ftoNode
+- =============
+- bpoFpsCls.py :: type hints for everything
+- =============
+- platfSiteBootstrap_fps.py :: Use it to test everything
 *** -
 ** <<Phase-1>> Next Steps
 *** +
 *** -------------- February 20, 2025 Start Date ---------------
-*** TODO @atexit.register module.plant of seeded scripts
+*** DONE @atexit.register module.plant of seeded scripts
+*** TODO Clean up exmpl-seeded-cmnds.cs
+*** TODO Clean up exmpl-plant-cmnds.cs
+*** TODO Use 'plantedCsu' concept in main.py and seedCmnd.cs
+*** TODO Add comments to b.imported about __main__.__file__ with atexit
+*** TODO Have .setup of seed have precedence.
+*** TODO Figure out multi-seed paradigm.
+*** TODO Test sbom with a Command and examples
+*** -----------
 *** TODO First Do it For Facter
 *** TODO Use all of above in Fresh VM to Station site registrar
 *** TODO Revisit sites reconstruction Using siteBootstrap model of panels/sites
 *** TODO in panels/site create 2 sections -- 1) Site Initial Construction -- 2) Platform Site Reconstruction
 *** TODO build and use siteBootstrap in bisos.sites and all relevant
-*** TODO Re-do generic guest build using .153 as registrar
-*** TODO Create a  /dedicated VM/ for registrars. Start from sysCharRealize.sh
-*** TODO Add reg capability to  dedicated VM.
+*** WAITING [#A] Re-do generic guest build using .153 as registrar
+*** TODO [#A] Create a  /dedicated VM/ for registrars. Start from sysCharRealize.sh
+*** TODO [#A] Add reg capability to  dedicated VM.
 *** TODO Repeat above for NAT, DHCP, WifiBridge
 *** --------------  February 20, 2025 End Date ---------------
 *** -
