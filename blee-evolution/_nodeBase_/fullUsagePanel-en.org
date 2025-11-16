@@ -37,6 +37,12 @@
 ** Overview Comes Here.
 ** B|
 * +
+* TODO [#A] In Blee, detect  terminal enable mouse -- ctl-F9
+* bpos-repos/visit is missing in magit-bpos menu
+* Bring in git-timemachine
+* Add xah-openIn
+* In At Point Url, Make Chrome be default
+* ---
 * Capture in Blee   https://github.com/bbatsov/prelude or perhaps NOT (Stick with Doom)
 * Void function org-file-name-concat -- Get the org package not from internal
 If you encounter an issue about org-file-name-concat being a void function and if it is related to org-persist with the cache, it means that it is the org-mode builtin to emacs that is used instead of the official one. To fix this, add the following to your init.el
@@ -77,7 +83,6 @@ projects). Server that does not support multi-root will run one per project(work
 * TODO Absorb https://github.com/szermatt/emacs-bash-completion?tab=readme-ov-file
 * WAITING [#B] Cleanup lceEmacsSrcBinsPrep.sh for the latest -- Once a working set, pin it
 * WAITING [#B] Cleanup blee and created dirs -- Test out with 29, 30 and latest
-* In At Point Url, Make Chrome be default
 * TODO [#B] BUG -- blee-29 some Sub menus for blee  do not appear
 * *TODO Capture https://github.com/karthink/gptel?tab=readme-ov-file#i-want-the-window-to-scroll-automatically-as-the-response-is-inserted
 * TODO Capture https://systemcrafters.net/advanced-package-management/using-straight-el
