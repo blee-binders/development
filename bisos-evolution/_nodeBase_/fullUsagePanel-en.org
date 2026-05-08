@@ -126,7 +126,7 @@
 ####+END
 ** +
 ** TODO Global Terminology Change For Next Major Release -- bxo becomes one of  bpo, bro, bso
-** TODO Global Terminology Change For:: bxo becomes bpo (portable) , bro (repo), bso (static)
+** TODO Global Terminology Change For:: bxo becomes bpo (portable) , bro (repo), bso (static) - perhaps bfo (file)
 ** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
 ** TODO Global Terminology Change For:: cntnr -- Container to Platform (pltfrm)
 ** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr= -- -p pltfrm=
@@ -188,6 +188,8 @@
 *** Draw BCB Tree - commonBase -- usgEnv|svcEnv -- usgEnv|MediaCenter, usgEnv|lcnt
 *** BCBs are stored some place in bisos/var
 *** -B|
+** TODO [#A] Converge bisos-pip/coreDist  into bisos-pip/sbom -- Include /etc/apt/sources.list contrib needed for tor
+** TODO [#A] sudo apt-get install ntpsec  --- Also create a panel for time in platform
 ** TODO (lsp-mode -1)  In dblocks
 ** graphviz binsprep somewhere
 ** DONE [#A] Add to bisos.crypt --  marmeeGmailOauth2.cs  -- ModuleNotFoundError: No module named 'pykeepass_cache'
