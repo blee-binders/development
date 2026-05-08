@@ -37,6 +37,12 @@
 ** Overview Comes Here.
 ** B|
 * +
+* TODO [#A] disable company in python-mode -- But do it for BASH
+;; enable company in all prog-mode based modes
+  (add-hook 'prog-mode-hook 'company-mode)
+  ;; disable company in python-mode
+  (add-hook 'python-mode-hook (lambda() (company-mode 0)))
+SCHEDULED: <2026-04-23 Thu>
 * TODO [#A] In Blee, detect  terminal enable mouse -- ctl-F9
 * bpos-repos/visit is missing in magit-bpos menu
 * Bring in git-timemachine
