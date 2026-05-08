@@ -165,7 +165,22 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS To Be Captured:* |]]  _BISOS_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO apt-get install whois
+** TODO Web UI -- csPlayer for rawBisos
+- bro_rawBisosPlatform/sys/bin Is the strating point . Put cap from bisos.webCap there.
+- bxRepos/bisos-web --- Add to common/bases
+- bxRepos/cliGui
+- bisos.webCap
+** TODO [#A] Add sbomsList to sbom-seed.py
+** TODO setup user environment  ~/bpos/ for bro_rawBisosUser
+** TODO  move mbDevUser repo to a different organization. bananMohsen, perhaps.
+** TODO F11 n n does not work for rawBisos
+** TODO [#A] [AtHome] At "By* is about autonomy oriented redecentralization ..."
+** TODO [#A] [Away]  clone panels bisos-web
+** TODO [AtHome] For rawBisos  /bisos/var/currents  link to bro_unsitedSite
+- Cleanup bisosSiteGitServer.sh  -- It has credentials IMPORTAN
+- Add bisosSite* to sites panel
+** TODO [AtHome] In /bisos/var/selected  link to bro_unsitedSite
+- Missing /bisos/panels/bisos-core/sites/linkToSiteRealmPanels -- Adjust to bro_rawBisosSite
 ** TODO [#B] *1H* See sub tree: Add to raw-bisos.sh concept of BISOS Capability Bundles (BCB) -- map to fgc (Functionaly Grouped Components) eg: plus hosting usgPlus servicePlus
 *** +
 *** Create a BISOS Software Management Menu  for BCB item under Panels
@@ -227,6 +242,15 @@
 ** -------- END: PyCS Telemetry --------
 ** ======================
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Qmail MAIL MARMEE" :extraInfo "_Mail_ Misc"
+** Archive :ARCHIVE:
+*** DONE /run/user/2001 for bx-dbock -- instead use /tmp/emacsUid//xxpidxx/
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-05-06 Wed 09:18
+:END:
+*** DONE apt-get install whois -- added to rawBisos-sbom.pcs
+:PROPERTIES:
+:ARCHIVE_TIME: 2026-05-06 Wed 10:18
+:END:
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Qmail MAIL MARMEE:* |]]  _Mail_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
