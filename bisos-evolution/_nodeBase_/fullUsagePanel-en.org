@@ -188,6 +188,9 @@
 *** Draw BCB Tree - commonBase -- usgEnv|svcEnv -- usgEnv|MediaCenter, usgEnv|lcnt
 *** BCBs are stored some place in bisos/var
 *** -B|
+** TODO aasMarmeeMaanage.cs
+- File "/bisos/pipx/venvs/bisos-marmee/lib/python3.11/site-packages/bisos/bpo/bpoRepo.py", line 96, in <module>
+    import pygit2
 ** TODO [#A] Converge bisos-pip/coreDist  into bisos-pip/sbom -- Include /etc/apt/sources.list contrib needed for tor
 ** TODO [#A] sudo apt-get install ntpsec  --- Also create a panel for time in platform
 ** TODO (lsp-mode -1)  In dblocks
