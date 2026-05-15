@@ -165,16 +165,32 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS To Be Captured:* |]]  _BISOS_ Misc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO Web UI -- csPlayer for rawBisos
+** TODO [#A] bisos.graphviz needs to have a pypi install.
+** TODO [#A] bisosSetupLcnt  For rawBisos
+SCHEDULED: <2026-05-12 Tue>
+- [AtHome] Copy ~pip_lcntBases bxObjects/bro_rawBisos/bro_lcntBases
+- [AtHome] Consider creating  bro_lcntExamples
+- E: Unable to locate package msttcorefonts
+ /bisos/core/bsip/bin/buePersian.sh::[209] -- buePersian.sh -- vis_persianFonts -- root 20260512095109927971627
+ [209]: vis_fontPkgsObtain
+** TODO Web UI -- csPlayer for rawBisos (Also on fulllContainer)
 - bro_rawBisosPlatform/sys/bin Is the strating point . Put cap from bisos.webCap there.
-- bxRepos/bisos-web --- Add to common/bases
+- bxRepos/bisos-web --- Add to common/bases -- csLineInvoker-react  csPlayerPerf-drf
 - bxRepos/cliGui
 - bisos.webCap
-** TODO [#A] Add sbomsList to sbom-seed.py
+- Container Systemd Replacement
+- Add csPlayerWebUi to asc/web graphviz
+** TODO [#A] List of common bases
+- bisos-web // /bisos/git/bxRepos/bisos-web/  csPlayerPerf-drf csLineInvoker-react
+- Add /bisos/git/anon/ext/misc/docker-systemctl-replacement
+** TODO [#A]  Add to blee Attach to client
+- Running blee should record its pid in /bisos/run/bleePid When it starts server
+- Add an attach to examples of blee script
+** DONE [#A] Add sbomsList to sbom-seed.py
 ** TODO setup user environment  ~/bpos/ for bro_rawBisosUser
 ** TODO  move mbDevUser repo to a different organization. bananMohsen, perhaps.
 ** TODO F11 n n does not work for rawBisos
-** TODO [#A] [AtHome] At "By* is about autonomy oriented redecentralization ..."
+** DONE [#A] [AtHome] At "By* is about autonomy oriented redecentralization ..."
 ** TODO [#A] [Away]  clone panels bisos-web
 ** TODO [AtHome] For rawBisos  /bisos/var/currents  link to bro_unsitedSite
 - Cleanup bisosSiteGitServer.sh  -- It has credentials IMPORTAN
