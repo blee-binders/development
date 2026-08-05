@@ -193,6 +193,7 @@ subtree is chown and hidden. And add outline-show-subtree to +- menu.
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *blee-env directory structure:* |]]  Todos List  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Also look into -- https://github.com/LionyxML/emacs-solo
 ** env/boot    -- To get booting started
 ** env/adopt   -- Packages adoption -- Needs to have its own repeated framework
 ** env/bleeLib  -- Native Blee Libraries
