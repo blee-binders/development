@@ -49,6 +49,12 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** TODO [#A] Create a "Relevant Info" top panel. Categorize by topic.
+SCHEDULED: <2026-08-04 Tue>
+Example: RelevantInfo/AI/noChatbot   Then from AI, link to Relevant Info.
+Same Story with emacs, LaTeX, cheet sheets, etc
+** -B|
 * +
 * -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo "TABULAR"
