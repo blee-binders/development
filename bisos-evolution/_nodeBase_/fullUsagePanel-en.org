@@ -55,7 +55,23 @@
 ** TODO [#A] Create a "Relevant Info" top panel. Categorize by topic.
 SCHEDULED: <2026-08-04 Tue>
 Example: RelevantInfo/AI/noChatbot   Then from AI, link to Relevant Info.
-Same Story with emacs, LaTeX, cheet sheets, etc
+Same Story with emacs, LaTeX, cheet sheets, etc. Quick References, Interesting Articles.
+** TODO [#A] From /bisos/platform and /bisos/site create links to bro_rawBisos
+SCHEDULED: <2026-08-26 Wed>
+- ln -s /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPlatform platform
+- ln -s /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosSite site
+** TODO [#A] Create rawBisosCapabilities.cs -- Or rawBisosCbm.cs
+SCHEDULED: <2026-08-21 Fri>
+To run separately. After rawBisos-Basic. rawBisos-Cbm.
+** TODO [#A] Add platformLimits.cs to RawBisos somewhere -- After if when_virtTypeIs == VirtType.
+SCHEDULED: <2026-08-23 Sun>
+** WAITING [#A] Needs Testing:: nvm and npm and node() to sbom-seed.cs
+SCHEDULED: <2026-08-23 Sun>
+- Replace exisiting npm usage with npm-sbom.pcs
+** TODO [#A] Capture shm increases from within priviledged systemd
+SCHEDULED: <2026-08-26 Wed>
+** TODO [#A] Add no --sandbox  to google-chrome Startup.
+SCHEDULED: <2026-08-26 Wed>
 ** -B|
 * +
 * _IMPORTANT_  --- Create /bisos/core/raw/bin   ---- Everything that is needed by rawBisos
