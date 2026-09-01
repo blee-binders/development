@@ -50,19 +50,27 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Now that there is startAiActivity.cs Each pkg and repo has its own WorkPlan. Link to those from here.
-** -
+** TODO [#A] [[file:/bisos/core/raw/rebuild/AI-WorkPlan.org]]  (aliases, testing, CBM top-level)
+SCHEDULED: <2026-08-31 Mon>
+Perhaps in combination with [[rawBisosCapabilities.cs]]
+** TODO [#A] Create <<rawBisosCapabilities.cs>> -- Or rawBisosCbm.cs
+SCHEDULED: <2026-08-21 Fri>
+To run separately. After rawBisos-Basic. rawBisos-Cbm.
+** TODO [#A] Use Marmee to send out messages to Frank Vanris
+** TODO [#A] Sort out domains -- Register soncli.com  -- and matoof.com -- do them through google.
+** TODO [#A] In _URGENT_  bro_dockerContainer build.bash is not consistent with .spcs
+SCHEDULED: <2026-08-31 Mon>
+ Image names don't match cp of raw-bisos is missing  --- Perhaps we can have a imageName/value file
+** TODO [#B] Now that there is aiActivity.cs Each pkg and repo has its own WorkPlan. Link to those from here.
+SCHEDULED: <2026-08-31 Mon>
 ** TODO [#A] Create a "Relevant Info" top panel. Categorize by topic.
 SCHEDULED: <2026-08-04 Tue>
-Example: RelevantInfo/AI/noChatbot   Then from AI, link to Relevant Info.
+Example: RelevantInfo/AI/noChatbotPaper   Then from AI, link to Relevant Info.
 Same Story with emacs, LaTeX, cheet sheets, etc. Quick References, Interesting Articles.
 ** TODO [#A] From /bisos/platform and /bisos/site create links to bro_rawBisos
 SCHEDULED: <2026-08-26 Wed>
 - ln -s /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosPlatform platform
 - ln -s /bisos/git/bxRepos/bxObjects/bro_rawBisos/bro_rawBisosSite site
-** TODO [#A] Create rawBisosCapabilities.cs -- Or rawBisosCbm.cs
-SCHEDULED: <2026-08-21 Fri>
-To run separately. After rawBisos-Basic. rawBisos-Cbm.
 ** TODO [#A] Add platformLimits.cs to RawBisos somewhere -- After if when_virtTypeIs == VirtType.
 SCHEDULED: <2026-08-23 Sun>
 ** WAITING [#A] Needs Testing:: nvm and npm and node() to sbom-seed.cs
