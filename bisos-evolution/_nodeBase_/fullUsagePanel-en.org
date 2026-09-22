@@ -50,12 +50,48 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO [#A]  Re-capture full re-install of airflow with additional sysd unit.
+SCHEDULED: <2026-09-18 Fri>
+Capture from exisiting implementation
+** TODO [#A] Capture AI-Outputs.org at mother, along with its commands and skills
+SCHEDULED: <2026-09-18 Fri>
+Cleanup exisiting implementation
+** TODO [#A]  sysdSysUnit remove is broken.
+SCHEDULED: <2026-09-18 Fri>
+The idiomatic sysdSysUnit remove is broken. It's a bug in bisos.debian (a dependency, not this repo):
+bifSystemd_csu.py:307 calls self._serviceFilePath.is_file() where _serviceFilePath is a str, not a Path ?
+AttributeError. It failed safely - nothing changed. I decomposed it into the sub-actions it was meant to chain
+(sysdSysUnit stop, sysdSysUnit disable, configFileDelete --cls="configFile_sysdUnit" --runAs="root"), all of which
+work. Worth fixing upstream, since remove is advertised in every planted unit's examples output.
+** TODO [#A]  _IMPORTANT_  Verify that all github commits have gmail or byname email and names.
+SCHEDULED: <2026-09-08 Tue>
+Find a way so that if the destination is github  email is one thing and
+if the destination is gitlab it is something else.
+** TODO [#A] Better and more CBMs
+SCHEDULED: <2026-09-05 Sat>
+Better: Improve the .pcs model to not be limited  to sysd. Include induction.
+More:
+- Add other examples and proprietary
+- Add emacsSrcBuild -- As induction
+- Add bleeBuild -- As induction
+- Add lcnt -- As induction
+** TODO [#A] Missing pip install bisos.gitist -- Missing clone of bisos-pip/gitist
+SCHEDULED: <2026-09-05 Sat>
+Needs to be retested about addition of PyGithub
+** TODO [#A] Add .github organizaton clonning to bisos.common
+SCHEDULED: <2026-09-06 Sun>
+Follow this pattern
+4eb00a4a0fb6-bystar# git clone git@mb_github:bx-blee/.github
+4eb00a4a0fb6-bystar# ln -s .github _github
+** TODO [#A] _IMPORTANT_ Missing noipv6.sh in nginx cbm.
+SCHEDULED: <2026-09-05 Sat>
+** TODO [#A] Add to Realms the concept of other manifested in /de/example -- comping from github.exampleds.de
+SCHEDULED: <2026-09-05 Sat>
+Create cbm and cbs for other.
+** TODO [#A] Add to Realms devel  -- Create cbm and cbs for it.
 ** TODO [#A] [[file:/bisos/core/raw/rebuild/AI-WorkPlan.org]] --- Adapt Containers to Guest and Box
 SCHEDULED: <2026-08-31 Mon>
 Revisit raw-bisos genesis picture and show layerings and types. (mention sysCbmManage.cs)
-** WAITING [#A]  Use Marmee to send out messages to FV
-SCHEDULED: <2026-09-03 Thu>
-Create mailings for Linkedin posts
 ** TODO [#A] Sort out domains -- Register soncli.com  -- and matoof.com -- do them through google.
 SCHEDULED: <2026-09-03 Thu>
 Also, list for AB.
@@ -66,9 +102,6 @@ Same Story with emacs, LaTeX, cheet sheets, etc. Quick References, Interesting A
 ** TODO [#A] Add platformLimits.cs to RawBisos somewhere -- After if when_virtTypeIs == VirtType.
 SCHEDULED: <2026-08-23 Sun>
 Move platformLimits.cs to bisos.platform
-** WAITING [#A] Needs Testing:: nvm and npm and node() to sbom-seed.cs
-SCHEDULED: <2026-08-23 Sun>
-- Replace exisiting npm usage with npm-sbom.pcs
 ** -B|
 * +
 * _IMPORTANT_  --- Create /bisos/core/raw/bin   ---- Everything that is needed by rawBisos
