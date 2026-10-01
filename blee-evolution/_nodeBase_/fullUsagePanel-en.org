@@ -37,6 +37,7 @@
 ** Overview Comes Here.
 ** B|
 * +
+* In 31.1 Acts and Apps drop downs don't work.
 * TODO [#A] disable company in python-mode -- But do it for BASH
 ;; enable company in all prog-mode based modes
   (add-hook 'prog-mode-hook 'company-mode)
@@ -148,6 +149,7 @@ projects). Server that does not support multi-root will run one per project(work
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+####+END
 # Local Variables:
 # eval: (setq-local ~selectedSubject "noSubject")
 # eval: (setq-local ~primaryMajorMode 'org-mode)
@@ -160,4 +162,3 @@ projects). Server that does not support multi-root will run one per project(work
 # eval: (bx:load-file:ifOneExists "./panelActions.el")
 # End:
 
-####+END
