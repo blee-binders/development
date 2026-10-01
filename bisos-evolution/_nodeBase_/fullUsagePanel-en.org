@@ -50,6 +50,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO [#A] In setup.py the dblock for requirements.txt needs to strip out the comments and say that requirements.txt was used.
+SCHEDULED: <2026-09-24 Thu>
 ** TODO [#A]  Re-capture full re-install of airflow with additional sysd unit.
 SCHEDULED: <2026-09-18 Fri>
 Capture from exisiting implementation
