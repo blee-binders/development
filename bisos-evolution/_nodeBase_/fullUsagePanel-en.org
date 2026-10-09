@@ -57,6 +57,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Raw BISOS Additions / Updates_: |]]  git clones, pip installs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO [#A]  Add bisos.postgres
+SCHEDULED: <2026-10-03 Sat>
 ** git@github:blee-binders/relevant-info
 ** TODO [#A] /bisos/panels/aiActivity-outputs
 SCHEDULED: <2026-09-30 Wed>
@@ -78,7 +80,78 @@ Move platformLimits.cs to bisos.platform
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Unsorted_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO [#A] By Reference -- Implement Stage 3: Implement bannaForEtcPasswd and  bannaForEtcGroup
+** TODO [#A] LOOP  merge ai-templates 
+SCHEDULED: <2026-10-03 Sat>
+** TODO [#A] Add to bisos.gitist -- gitistUsgConfig.cs which manages .gitconfig, .gitconfig-bisos .githook
+SCHEDULED: <2026-10-03 Sat>
+Test through usgAcctGit with bro_rawBisos
+** TODO [#A] Layer airflow on top of bisos.postgres and verify with raw-bisos (admin passwd as airflow)
+SCHEDULED: <2026-10-03 Sat>
+Needs entries in bro_rawBisos CBMs. Needs ordering. Needs -sbom inclusion.
+** TODO [#A] Add and test VNC with  and without password
+SCHEDULED: <2026-10-03 Sat>
+Test both in container and in pure VM.
+** TODO [#A] Add gitleaks to usgAcct workflow. And other parts to gitist. Create usgAcctGit.cs through gitistUsgConfig.cs
+SCHEDULED: <2026-10-03 Sat>
+
+1. Block secrets before they're committed
+
+A secret that never gets committed costs nothing. Once it's pushed, it has to be rotated and an incident opened. So
+the most valuable place for gitleaks is a pre-commit hook.
+
+Option A: a plain git hook, applied to all your repos at once. This fits a setup like BISOS with many repos:
+
+mkdir -p ~/.githooks
+cat > ~/.githooks/pre-commit <<'EOF'
+#!/bin/sh
+# Block commits that contain secrets. Bypass (rarely, deliberately): git commit --no-verify
+exec gitleaks protect --staged --redact --no-banner -v
+EOF
+chmod +x ~/.githooks/pre-commit
+git config --global core.hooksPath ~/.githooks
+
+With a newer gitleaks, use gitleaks git --staged --redact -v instead. One caveat: setting core.hooksPath globally
+replaces any repo-local .git/hooks. If some repos have their own hooks, chain them from this script.
+
+3. Keep a config file in the repo
+
+Commit a .gitleaks.toml that starts from the defaults ([extend] useDefault = true). Then add rules for your own
+secret formats, and narrow allowlists for known safe patterns such as your <client_secret> placeholders.
+
+Commit a .gitleaksignore of fingerprints for false positives you've reviewed, like the "API asks:" line.
+
+Keep allowlists narrow: a specific regex or fingerprint, not whole directories. A broad allowlist (for example ^inDocs/) eventually hides a real secret.
+
+4. Deal with old findings before adopting it
+
+When adding gitleaks to an existing repo, first run a full history scan. Then handle each finding, as you're doing
+now:
+
+Rotate the secret if it's real. Rotation is the only real fix.
+Redact it from HEAD.
+
+Record what's left (.gitleaksignore, or --baseline-path with the report) so later scans show only new problems.
+Rewriting history (git filter-repo) is a last resort. It's disruptive for everyone with a clone, and pointless if
+the secret is already rotated.
+
+5. Also scan on the server
+
+Hooks can be skipped (--no-verify, or a fresh clone without the hook installed), so a server-side check is still
+needed. You already have one: GitGuardian in the mandatory pipeline. Adding gitleaks to CI as well would mostly
+duplicate it. Outside T-Mobile, running gitleaks as a CI job on every push or merge request is the standard way to
+cover this layer.
+
+6. Run full-history scans periodically
+
+Detection rules improve over time, so an old commit can be flagged by a newer version. A weekly or per-release
+gitleaks detect --source . --redact (newer: gitleaks git) catches these. It suits a cron job or an Airflow DAG.
+
+7. Handle the output carefully
+
+Always use --redact. Unredacted terminal scrollback, CI logs and JSON reports become new places the secret leaks.
+Don't commit reports, and delete them when you're done with them.
+
+** TODO [#A] By Reference -- Implement Stage 3 of banna: Implement bannaForEtcPasswd and  bannaForEtcGroup
 SCHEDULED: <2026-09-30 Wed>
 [[file:/bisos/git/auth/bxRepos/bisos-pip/banna/AI-WorkPlan.org]]
 ** TODO [#A] In setup.py the dblock for requirements.txt needs to strip out the comments and say that requirements.txt was used.
@@ -649,6 +722,7 @@ git config --global pull.rebase false
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+####+END
 # Local Variables:
 # eval: (setq-local ~selectedSubject "noSubject")
 # eval: (setq-local ~primaryMajorMode 'org-mode)
@@ -661,4 +735,3 @@ git config --global pull.rebase false
 # eval: (bx:load-file:ifOneExists "./panelActions.el")
 # End:
 
-####+END
