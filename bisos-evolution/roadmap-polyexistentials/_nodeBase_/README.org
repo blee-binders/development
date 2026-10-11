@@ -1,0 +1,59 @@
+#+title: Evolution of Polyexistentials Book
+
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= //bisos/panels/bisos-core/bisos-evolution/roadmap-polyexistentials/_nodeBase_/README.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/development/bisos-evolution/roadmap-polyexistentials/_nodeBase_/README.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/bashEvol/_nodeBase_")][ =bashEvol= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/bootstrapEvol/_nodeBase_")][ =bootstrapEvol= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/evolution-2022/_nodeBase_")][ =evolution-2022= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/pyCsFwrk-evol/_nodeBase_")][ =pyCsFwrk-evol= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/roadmap-bystar-3g/_nodeBase_")][ =roadmap-bystar-3g= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/bisos-evolution/roadmap-polyexistentials/_nodeBase_")][ =roadmap-polyexistentials= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-evolution/_nodeBase_")][ = /<bisos-evolution>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "/bisos")][ ~bisos~ ]] *|* [[elisp:(dired "//")][ ~~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+* AI and Human Purposes
+
+This document is both for humans and for AI (Claude).
+
+In Claude's context it is imported after Model and Terminology and other specific
+AI-Activities. This is the bigger picture of how various BISOS AI-Activities fit together.
+
+It also has its own WorkPlan, that in most cases maps to bisos packages AI-WorkPlans.
+
+* History of Evolution of Nature of Polyexistentials Book
+
+- Mixed two topics done rapidly to get it out
+- The logic of outline recognized separation of the two topics
+
+
+* Volume I -- Title: Nature of Polyexistentials -- Basis for Abolishment of Western IPR regime
+
+* Volume II -- Title: The Libre-Halaal ByStar Digital Ecosystem -- In Harmony with Nature of Polyexistentials
+
+* New Preface
+
+Many software engineers struggle with two aspects of their daily work
+
+1) Is IPR valid
+2) Can there be an alternative to the exploitation oriented American Digital ecosystem
+
+I am one of those.
+
+*  Evolution Work Plan
+
+** Stage 1: Create Base Dirs
+
+*** TODO [#A] <<1.1>> Copy exisiting into the new framework
+SCHEDULED: <2026-10-10 Sat>
