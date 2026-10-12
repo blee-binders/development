@@ -65,14 +65,15 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Raw BISOS Additions / Updates_: |]]  git clones, pip installs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO [#A]  Add bisos.postgres
+** TODO [#A]  Add New Packages -- bisos.postgres, bisos.kafka
 SCHEDULED: <2026-10-03 Sat>
-** git@github:blee-binders/relevant-info
+** git@github:blee-binders/relevant-info, bisos-evolution
 ** TODO [#A] /bisos/panels/aiActivity-outputs
 SCHEDULED: <2026-09-30 Wed>
-* TODO [#A] Missing pip install bisos.gitist -- Missing clone of bisos-pip/gitist
+** TODO [#A] Missing pip install bisos.gitist -- Missing clone of bisos-pip/gitist
 SCHEDULED: <2026-09-05 Sat>
 Needs to be retested about addition of PyGithub
+** TODO [#A] Add new CBMs -- postgress, kafka, airflow, dnsProc
 ** TODO [#A] Add .github organizaton clonning to bisos.common
 SCHEDULED: <2026-09-06 Sun>
 Follow this pattern
@@ -194,7 +195,7 @@ SCHEDULED: <2026-08-31 Mon>
 Revisit raw-bisos genesis picture and show layerings and types. (mention sysCbmManage.cs)
 ** TODO [#A] Sort out domains -- Register soncli.com  -- and matoof.com -- do them through google.
 SCHEDULED: <2026-09-03 Thu>
-Also, list for AB.
+Also, list for AB. Or perhaps soncli.matoof.com
 ** WAITING [#A] Create a "Relevant Info" top panel. Categorize by topic.
 SCHEDULED: <2026-08-04 Tue>
 Example: RelevantInfo/AI/noChatbotPaper   Then from AI, link to Relevant Info.
