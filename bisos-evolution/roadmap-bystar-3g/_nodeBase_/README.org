@@ -94,7 +94,7 @@ Scope ByStar-3G is three fold:
 
 1) <<rawByName>>     Implement [[ByStar-2G Raw-Bisos Missing Feature]]
 2) <<sitedByName>>   Implement Autonomy-Asserted Sited first.last.byname.net (Self-Hosted)
-2) <<federtaedByName>>  Implement a Public Factory at ByName.com for a Self-Service first.last.byname.com service
+3) <<selfServiceByName>>  Implement a Public Factory at ByName.com for a Self-Service first.last.byname.com service
 
 
 
@@ -111,7 +111,7 @@ Here we focus as byname as a primary example. Same applies to bySmb, byAlias, by
 
 *** first.last.byname.net Web Features
 
-- Static CMS based on gatsby/react/gnome
+- Static CMS based on gatsby/react
 -
 
 *** first.last.byname.net Mail Features
@@ -139,6 +139,33 @@ Here we focus as byname as a primary example. Same applies to bySmb, byAlias, by
   PALS can be transfered from on BISOS-Platform to another
 
 * ByStar-3G Implementaion Plan
+
+The work is to be pushed forward multi fold:
+
+1) <<1.>> Raw-BISOS-Pals model will be cultivated to reach gatsby based first.last.byname.net
+   - Driven by lcnt (gatsbyProc.spcs)
+   - Including reveal presentations
+   - Ready for Conversion usage
+
+2) <<2.>> The equivalent of [[1.]] will be done for https://www.bytopic.com
+   - New DNS servers for bytopic.com
+   - Revival of what existed through conversion facilities
+   - Public reveal presentations
+
+3) <<3.>> Addition of qmail as CBM Virtual Instances
+   - for postmaster@hostname.here
+   - for main@user.bytopic.com
+
+4) <<4.>> Addition of [[3.0]] and [[2.]] with a CLI factory for byname and bysmb models
+
+5) <<5.>> Conversion of all existing sites to [[4.0]]
+   - Convert content from cvs to PALS BPOs.
+   - Materialize PALSs BPOs.
+
+6) <<6.0>> Web based factory for ByName and BySmb
+
+7) <<7.0>> Clean Site Construction for Assersion from Factory to Self
+
 
 Replace these to pointers to the AI-workplans.
 
