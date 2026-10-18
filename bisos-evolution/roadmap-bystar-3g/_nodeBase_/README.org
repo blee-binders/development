@@ -142,6 +142,15 @@ Here we focus as byname as a primary example. Same applies to bySmb, byAlias, by
 
 The work is to be pushed forward multi fold:
 
+0) <<0.0>> Infrastructural Improvements
+   - Resolve Blee Speed problem
+   - bisos.b logging, Error Handling, Exception Handling, and stdio and userIO Cleanups
+   - Inclusion of telemetry in Framework
+   - csPlayer completion
+   - CMDB implementation
+   - Platform recreations from BPOs and CMDB integration
+   - Infra to Deb 13 Upgrades
+
 1) <<1.>> Raw-BISOS-Pals model will be cultivated to reach gatsby based first.last.byname.net
    - Driven by lcnt (gatsbyProc.spcs)
    - Including reveal presentations
@@ -164,7 +173,7 @@ The work is to be pushed forward multi fold:
 
 6) <<6.0>> Web based factory for ByName and BySmb
 
-7) <<7.0>> Clean Site Construction for Assersion from Factory to Self
+7) <<7.0>> Clean Site Construction for Asserted PALS from Factory to Self
 
 
 Replace these to pointers to the AI-workplans.
